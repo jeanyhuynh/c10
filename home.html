@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/styles/main.css">
+  <title>Home Page</title>
+
+</head>
+
+<body id="home" data-title="1.0-screen" class="bg-light-blue home-page">
+  <div class="container-fluid centered position-relative">
+    <div class="centered middle">
+      <div class="label-text animate fadeIn">
+        Ever wondered, how much should you hate your website? Who are you in today's land of digital natives -
+        <span class="pink-text">
+          ROYALTY
+        </span> or
+        <span class="green-text"> COMMONER</span>?
+      </div>
+    </div>
+    <div class="position-relative cloud-animation">
+      <div class="cloud cloud-left animate fadeIn">
+        <img src="dist/assets/cloud-left.svg" alt="cloud" />
+      </div>
+      <div class="cloud cloud-top-right animate fadeIn15s">
+        <img src="dist/assets/cloud-right-top.svg" alt="cloud" />
+      </div>
+      <div class="cloud cloud-bottom-right animate fadeIn3s">
+        <img src="dist/assets/cloud-right-bottom.svg" alt="cloud" />
+      </div>
+
+    </div>
+    <div id="tooltip_king" class="tooltip-home king">
+      <div id="content_tooltip_character" class="tooltip-character left">
+        <span>
+          King
+        </span>
+        I am web royalty, my site is the most functional, fast and usable of all.</div>
+    </div>
+    <div id="tooltip_monk" class="tooltip-home monk">
+      <div id="content_tooltip_character" class="tooltip-character left">
+        <span>monk</span>
+        I'm meditating, and praying for a better website. Aom!</div>
+    </div>
+    <div id="tooltip_farmer" class="tooltip-home farmer">
+      <div id="content_tooltip_character" class="tooltip-character right">
+        <span>farmer</span>
+        I have the worst website of all the lands. Please, help me!</div>
+    </div>
+    <div id="tooltip_beggar" class="tooltip-home beggar">
+      <div id="content_tooltip_character" class="tooltip-character right">
+        <span>beggar</span>
+        My website is pretty bad. But ha, look at that beggar!</div>
+    </div>
+    <div id="tooltip_knight" class="tooltip-home knight">
+      <div id="content_tooltip_character" class="tooltip-character left">
+        <span>knight</span>
+        <div>I have a pretty good site, but am inferior to our King.</div>
+      </div>
+    </div>
+
+
+
+    <div class="cta-home w100 centered">
+      <a href="screen2.0.html" id="btn-scre" class="centered btn-primary btn-medium red-bg color--white animate fadeIn3s">
+        <span>Take the quiz now to find out!</span>
+      </a>
+    </div>
+    <div class="animate-footer animate fadeIn3s">
+      <div class="animal-left">
+        <img src="dist/assets/gif/turtle_normal.svg" />
+      </div>
+      <div class="animal-right">
+        <img src="dist/assets/gif/rabbit_closedeyes.svg" />
+      </div>
+    </div>
+  </div>
+  <script src="dist/vendors/jquery-3.3.1.min.js"></script>
+  <script src="dist/vendors/TweenMax.js"></script>
+  <script src="dist/scripts/main.js"></script>
+  <!-- <script>
+    $('#home').css('width', screen.width);
+    $(window).on("orientationchange", function (event) {
+      location.reload();
+      console.log('width',screen.width )
+      $('#home').css('width', screen.width);
+    });
+  </script> -->
+  <script>
+    $("#progress_q", window.parent.document).hide();
+
+  </script>
+</body>
+
+</html>

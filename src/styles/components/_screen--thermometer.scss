@@ -1,0 +1,149 @@
+.thermometer-screen {
+  @media (min-width: 48em) {
+    //padding: 8.5em 0;
+  }
+
+  .primary-content {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+
+    @media (min-width: 48em) {
+      margin-top: 5rem;
+    }
+  }
+
+  .sick {
+    width: 39%;
+    @media (max-width: 767px) {
+      margin-bottom: 5rem;
+      width: 100%;
+    }
+
+    img {
+      max-width: 14em;
+
+      @media (min-width: 48em) {
+        max-width: 24.5em;
+      }
+    }
+  }
+
+  .thermometer {
+    position: relative;
+    max-width: 7em;
+
+    .cal {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+
+      &#btn-scroll {
+        width: 3em;
+
+        @media (min-width: 48em) {
+          width: 3.5em;
+        }
+      }
+
+      &#level {
+        width: 0.5em;
+        bottom: 0.75em;
+        height: 0;
+        max-height: 293px;
+        margin-left: -0.1rem;
+        background-image: linear-gradient(
+          -180deg,
+          #fbce00 0%,
+          #ea821d 51%,
+          #d93838 100%
+        );
+
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+    .progress-bar-content {
+      position: relative;
+      width: 7.1rem;
+      height: 35rem;
+      background-color: transparent;
+      background-image: url("../assets/thermometer.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      &:hover {
+        cursor: pointer;
+      }
+      .icon-drag {
+        left: 1rem;
+      }
+    }
+  }
+
+  .list-radio {
+    margin: 0;
+    width: 50%;
+
+    @media (max-width: 767px) {
+      position: relative;
+      width: calc(100% - 5em);
+    }
+
+    .container {
+      color: $white-color;
+      font-size: 2rem;
+      line-height: 30px;
+      padding-left: 2rem;
+
+      @media (max-width: 767px) {
+        font-size: 2rem;
+        line-height: 30px;
+      }
+      @media (max-width: 414px) {
+        font-size: 2rem;
+        line-height: 19px;
+      }
+      @media (max-width: 320px) {
+        font-size: 1.8rem;
+        line-height: 19px;
+      }
+    }
+
+    ul {
+      li {
+        padding: 0;
+        margin-top: 3rem;
+
+        @media (max-width: 480px) {
+          margin-top: 3rem;
+        }
+        @media (max-width: 375px) {
+          margin-top: 2rem;
+        }
+        @media (max-width: 320px) {
+          margin-top: 2rem;
+        }
+        &:first-child {
+          margin-top: 0;
+        }
+        &.active > .container {
+          color: $yellow-color !important;
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .sick {
+      width: 100%;
+    }
+    .thermometer {
+      padding: 2rem;
+    }
+    .list-radio {
+      width: 82%;
+      padding: 1rem 4rem 0 3rem;
+    }
+  }
+}

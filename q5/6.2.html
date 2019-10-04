@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
+  <link rel="stylesheet" href="../dist/styles/main.css">
+  <title>Animation</title>
+</head>
+
+<body data-type="q5" data-js="q5-progressing" class="bg-green q5">
+  <div class="container-fluid wrapper centered middle ssl-screen">
+    <div class="centered">
+      <div class="label-text load-index">
+        <label class="animate fadeIn white-text">
+          To continue, we’ll need more details please!
+        </label>
+      </div>
+      <div class="feeling-progress animate fadeIn load-index">
+
+        <div class="animate fadeIn2s feeling-img">
+          <img src="../dist/assets/gif/pleased-web.svg" />
+        </div>
+
+      </div>
+      <div class="question-check load-index animate fadeIn2s">
+        <div class="take-note-slider">
+          <span>"Pleased—nay, proud—to report that I know exactly what my website can do, and I use it to its full extent."</span>
+        </div>
+        <div class="list-radio custom--yellow">
+          <ul>
+            <li>
+              <label class="container">
+                <input type="radio" name="option_check" value="1" checked />
+                <span class="checkmark"></span>
+                Yes
+              </label>
+
+            </li>
+            <li>
+              <label class="container">
+                <input type="radio" name="option_check" value="2" />
+                <input type="hidden" name="question_Id" value="15" />
+                <span class="checkmark"></span>
+                No
+              </label>
+
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="flex-box mt5 centered animate fadeIn3s">
+        <a href="6.3.html" id="btn_6_2_submit_power" class="btn mt-5 mbt3 load-index btn-short btn-primary blue-bg color--white">
+          <span>Let's check your feelings with some facts.</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="../dist/vendors/jquery-3.3.1.min.js"></script>
+  <script src="../dist/vendors/TweenMax.js"></script>
+  <script src="../dist/scripts/main.js"></script>
+  <script>
+    let percent_line = 84,
+      percent_line_head = percent_line,
+      text = "Select the right option.";
+    $("#progress_q", window.parent.document).show();
+    $("#progress_bar_line", window.parent.document).css("width", percent_line + "%");
+    $("#progress_bar_line_head", window.parent.document).css("width", percent_line_head + "%");
+    $("#content_tooltip", window.parent.document).html(text);
+  </script>
+</body>
+
+</html>

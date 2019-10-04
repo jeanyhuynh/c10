@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/styles/main.css">
+    <title>Animation</title>
+</head>
+
+<body data-title="3.4-screen" class="bg-green" data-js="q2">
+    <div class="container-fluid centered middle partners-screen">
+        <div class="centered">
+            <div class="load-index label-text label-text-locker load-index">
+                <label class="animate fadeIn white-text">
+                    What CMS system are you using?
+                </label>
+            </div>
+            <div class="load-index list-partners animate fadeIn12s load-index">
+                <ul id="list-cms-partners">
+                    <li class="active" data-act="active">
+                        <a href="">
+                            <img src="dist/assets/wordpress.png" />
+                            <span class="partner-name">Wordpress</span>
+                        </a>
+                        <input type="hidden" name="answer_scr_3_4" value="1">
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="dist/assets/drupal.png" />
+                            <span class="partner-name">Drupal</span>
+                        </a>
+                        <input type="hidden" name="answer_scr_3_4" value="2">
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="dist/assets/sitecore.png" />
+                            <span class="partner-name">Sitecore</span>
+                        </a>
+                        <input type="hidden" name="answer_scr_3_4" value="3">
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="dist/assets/siteinfinity.png" />
+                            <span class="partner-name">Sitefinity</span>
+                        </a>
+                        <input type="hidden" name="answer_scr_3_4" value="4">
+                    </li>
+                </ul>
+            </div>
+            <div class="load-index input-text animate fadeIn15s load-index mbt3 mt-5 flex-box">
+                <label id="except_case_active" class="white-text">
+                    Other:
+                    <input id="CMSActive" type="text" value="" placeholder="" />
+                    <input type="hidden" name="answer_scr_3_4" value="5">
+                </label>
+            </div>
+            <div class="flex-box w100 centered mt5">
+                <a href="screen3.5.html" id="btn_3_4_submit" class="btn mt-5 load-index btn-short btn-primary blue-bg color--white animate fadeIn3s">
+                    <span>next</span>
+                    <span class="fa fa-long-arrow-right"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="dist/vendors/jquery-3.3.1.min.js"></script>
+    <script src="dist/vendors/TweenMax.js"></script>
+    <script src="dist/scripts/main.js"></script>
+    <script>
+        let percent_line = 28,
+            percent_line_head = percent_line,
+            text = "Select your CMS platform.";
+        $("#progress_q", window.parent.document).show();
+        $("#progress_bar_line", window.parent.document).css("width", percent_line + "%");
+        $("#progress_bar_line_head", window.parent.document).css("width", percent_line_head + "%");
+        $("#content_tooltip", window.parent.document).html(text);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
+  <link rel="stylesheet" href="../dist/styles/main.css">
+  <title>Animation</title>
+</head>
+
+<body data-type="q4" data-js="q4-visitor" class="bg-yellow">
+  <div class="container-fluid centered middle q4">
+    <div class="centered">
+      <div class="load-index label-text animate fadeIn">
+        <span class="text-note-regular">
+          Okay, keep talking...
+        </span>
+        <label class="animate fadeIn primary-text">
+          My most visited pages are also the ones I want my visitors to see.
+        </label>
+      </div>
+
+      <div class="body-content mt0 centered middle load-index animate fadeIn15s as-row">
+        <div class="content-box is-mobile animate fadeIn2s">
+          <div class="visitors animate fadeIn2s">
+            <img src="../dist/assets/most-visitor.png" />
+          </div>
+        </div>
+        <div class="list-radio content-box">
+          <ul id="visitor-list">
+            <li class="actived">
+              <label class="container">Yes, definitely
+                <input type="radio" checked="checked" name="visit_answer" value="1" />
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <label class="container">
+                Sort of
+                <input type="radio" name="visit_answer" value="2" />
+                <span class="checkmark"></span>
+              </label>
+
+            </li>
+            <li>
+              <label class="container">
+                My homepage is the most visited page
+                <input type="radio" name="visit_answer" value="3" />
+                <span class="checkmark"></span>
+              </label>
+
+            </li>
+            <li>
+              <label class="container">
+                Not sure
+                <input type="radio" name="visit_answer" value="4" />
+                <span class="checkmark"></span>
+              </label>
+
+            </li>
+            <li>
+              <label class="container">
+                I don't have enough traffic to tell
+                <input type="radio" name="visit_answer" value="5" />
+                <span class="checkmark"></span>
+              </label>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="w100 centered load-index">
+        <a href="5.2.html" id="btn_5_1_submit_visit" class="btn mt0 mbt3 load-index btn-short btn-primary green-bg color--white animate fadeIn3s">
+          <span>Tap to continue</span>
+          <span class="fa fa-long-arrow-right"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="../dist/vendors/jquery-3.3.1.min.js"></script>
+  <script src="../dist/vendors/TweenMax.js"></script>
+  <script src="../dist/scripts/main.js"></script>
+  <script>
+    let percent_line = 64,
+      percent_line_head = percent_line,
+      text = "Select one option to continue.";
+    $("#progress_q", window.parent.document).show();
+    $("#progress_bar_line", window.parent.document).css("width", percent_line + "%");
+    $("#progress_bar_line_head", window.parent.document).css("width", percent_line_head + "%");
+    $("#content_tooltip", window.parent.document).html(text);
+  </script>
+</body>
+
+</html>

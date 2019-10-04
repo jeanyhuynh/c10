@@ -1,0 +1,556 @@
+.contact-form-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-image: url(../assets/contact-form/shape-bg.png);
+}
+.contact-form {
+  margin-top: 1.5rem;
+  .head-box {
+    position: relative;
+    width: 100%;
+    align-items: flex-end;
+    .logo-form {
+      margin-bottom: 3.5rem;
+    }
+    .logo-form-icon {
+      display: flex;
+      width: 4.6rem;
+      height: 5rem;
+    }
+    .icon-head {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 23rem;
+      height: 11rem;
+    }
+  }
+  @media (max-width: 480px) {
+    .head-box {
+      margin-top: 8rem;
+      .logo-form-icon {
+        display: flex;
+        width: 4.6rem;
+        height: 5rem;
+        display: flex;
+        height: 5rem;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        top: -16rem;
+      }
+    }
+  }
+
+  .box-form {
+    width: 100%;
+    background-color: $white-color;
+    .head-form {
+      padding: 5rem 8rem;
+    }
+    @media screen and (max-width: 768px) {
+      .head-form {
+        padding: 5rem 2rem;
+      }
+    }
+    .label-text {
+      margin-bottom: 0;
+    }
+    .note-contact {
+      padding: 3rem 0;
+      font-family: "Rubik Regular";
+      font-size: 1.2rem;
+      line-height: 15px;
+    }
+    .note-attention {
+      position: relative;
+      display: flex;
+      padding: 2rem 3rem;
+      background-color: #f2f2f2;
+      border-radius: 1rem;
+      .quote-content {
+        padding: 2rem;
+        font-family: "Rubik Regular";
+        font-size: 2rem;
+        line-height: 22px;
+        color: $primary-text-color;
+        b {
+          font-family: "Rubik Bold";
+        }
+      }
+      .icon-quote {
+        color: $pink-color;
+        width: 3rem;
+        font-size: 3rem;
+        &.fa-quote-left {
+          padding-top: 1.2rem;
+        }
+        &.fa-quote-right {
+          display: flex;
+          align-self: flex-end;
+        }
+      }
+      .btn-remember {
+        position: absolute;
+        left: 50%;
+        top: -1rem;
+        transform: translateX(-50%);
+        padding: 0.5rem 2rem;
+        font-family: "Rubik Bold";
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        color: $white-color;
+        background-color: $pink-color;
+      }
+    }
+    .form-submit {
+      padding: 2rem 2rem 6rem;
+      background-color: $color--danube;
+      color: $white-color;
+      fieldset {
+        max-width: 100%;
+        width: 100%;
+        float: left;
+        &:nth-child(1) {
+          width: 100%;
+          .hs-form-field label {
+            font-size: 2rem;
+          }
+        }
+        &:nth-child(2) {
+          width: 75%;
+
+          .hs-form-field {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            width: 31%;
+            margin-right: 2rem;
+            &:last-child {
+              margin-right: 0;
+            }
+            label {
+              font-family: "Rubik Bold";
+              font-size: 1.4rem;
+              margin-bottom: 1rem;
+              text-transform: capitalize;
+            }
+            @media screen and (max-width: 768px) {
+              width: 100% !important;
+              margin-top: 2rem;
+              .hs-input {
+                width: 100%;
+              }
+            }
+          }
+        }
+        &:nth-child(3) {
+          padding-left: 1.5rem;
+          width: 25%;
+          .hs-form-field {
+            width: 100%;
+            margin-right: 0;
+          }
+          @media screen and (max-width: 768px) {
+            padding-left: 0;
+          }
+        }
+        &:nth-child(4) {
+          width: 50%;
+          margin-top: 3rem;
+          position: relative;
+
+          .hs-form-field {
+            width: 48%;
+            margin-right: 0;
+            @media screen and (max-width: 768px) {
+              width: 50%;
+              float: left;
+            }
+          }
+          .hs_email {
+            width: 100%;
+            .input {
+              input[type="email"] {
+                width: 96%;
+                padding: 1rem;
+                max-height: 3.8rem;
+                font-family: "Rubik Regular";
+                font-size: 1.4rem;
+                color: $primary-text-color;
+                border: 0;
+                @media screen and (max-width: 768px) {
+                  width: 100%;
+                }
+              }
+            }
+          }
+          .hs-richtext {
+            position: absolute;
+            top: 7rem;
+          }
+          .hs_test_multiple_choice,
+          .hs_checkbox_option {
+            margin-top: 5rem;
+            ul li {
+              padding: 0.5rem 0;
+              span {
+                font-family: "Rubik Regular";
+                font-size: 1.4rem;
+              }
+
+              &:first-child {
+                padding-top: 0.5rem;
+              }
+            }
+            input:checked {
+              background-color: $white-color;
+            }
+          }
+        }
+        &:nth-child(5) {
+          width: 50%;
+          margin-top: 3rem;
+          padding-left: 1rem;
+
+          textarea {
+            width: 100%;
+            border: 0;
+            height: 16rem;
+            font-family: "Rubik Regular";
+            font-size: 1.4rem;
+            color: $primary-text-color;
+          }
+          .hs-form-field {
+            width: 100%;
+            margin-right: 0;
+          }
+          @media screen and (max-width: 768px) {
+            padding-left: 0;
+          }
+        }
+        @media screen and (max-width: 768px) {
+          width: 100% !important;
+          margin-top: 2rem;
+        }
+      }
+      fieldset.form-columns-1 .hs-richtext {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          margin: 0;
+        }
+      }
+      .hs-form-field {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 25%;
+        margin-right: 1rem;
+        label {
+          font-family: "Rubik Bold";
+          font-size: 1.4rem;
+          margin-bottom: 1rem;
+          text-transform: capitalize;
+        }
+      }
+      .form-columns-1 {
+        .hs_single_text {
+          width: 100%;
+          padding: 0 0 2rem 0;
+          font-family: "Rubik Bold";
+          font-size: 2rem;
+          text-align: center;
+          .input {
+            display: none;
+          }
+        }
+      }
+      .input {
+        margin-right: 0;
+        input[type="text"],
+        input[type="email"] select {
+          padding: 1rem;
+          border: 0;
+          color: $primary-text-color;
+        }
+        select {
+          border: 0;
+          width: 100%;
+          border-radius: 0;
+          height: 3.8rem;
+          font-size: 1.2rem;
+          font-family: "Rubik Regular";
+          color: #999999;
+          -webkit-appearance: none;
+          width: 100%;
+          padding: 0 5%;
+          box-shadow: none;
+          border: none;
+          border-radius: initial;
+          -webkit-border-radius: initial;
+          -moz-border-radius: initial;
+          background: white url(../assets/contact-form/icon-select.png)
+            no-repeat 95% center;
+          background-size: 10px;
+        }
+      }
+      .hs-form-required {
+        color: $pink-color;
+      }
+      .hs-form-checkbox {
+        label {
+          span {
+            margin-left: 1rem;
+          }
+        }
+        .hs-form-checkbox-display {
+          display: flex;
+          position: relative;
+          .checkmark {
+            position: absolute;
+            left: -1rem;
+            background-color: #fff;
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+          .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+          }
+          input:checked ~ .checkmark::after {
+            display: block;
+          }
+          .checkmark::after {
+            left: 5px;
+            top: 0;
+            width: 2px;
+            height: 9px;
+            border: solid $green-dark-color;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+        }
+        .hs-form-field label {
+          margin-bottom: 0;
+        }
+      }
+      .actions {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        [type="submit"] {
+          width: 98%;
+          padding: 1rem 0;
+          margin: 2rem 0 1rem 1rem;
+          color: $white-color;
+          background-color: $pink-color;
+          text-transform: uppercase;
+          border: 0;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          [type="submit"] {
+            width: 100%;
+            margin: 2rem 0;
+          }
+        }
+      }
+      .take-note-form {
+        font-size: 1.4rem;
+        color: $white-color;
+        font-family: "Rubik Regular";
+        text-align: left;
+        margin-left: 1rem;
+      }
+    }
+
+    .client-title {
+      font-family: "Rubik Bold";
+      font-size: 2rem;
+      color: $primary-text-color;
+    }
+    .contact-list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 3rem;
+      .contact-box {
+        width: calc(100% / 5);
+        padding: 0 2.5rem;
+        margin: 2rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    .cta-site {
+      margin-bottom: 5rem;
+      padding: 1rem 3rem;
+      background-color: $color--danube;
+      text-transform: uppercase;
+      color: $white-color;
+    }
+    .article {
+      padding: 5rem 3rem;
+      background-color: $pink-color;
+      .client-title {
+        color: $white-color;
+      }
+      .article-colum {
+        display: flex;
+        margin: 3rem 0;
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+          div {
+            width: 100%;
+          }
+          .list-radio {
+            ul {
+              width: 100%;
+              .checkmark {
+                top: -5rem;
+              }
+            }
+          }
+        }
+        .col-3 {
+          display: flex;
+          justify-content: space-between;
+          width: 33%;
+
+          &:nth-child(2) {
+            margin: 0 2rem;
+          }
+          @media screen and (max-width: 768px) {
+            width: 100%;
+
+            &:nth-child(2) {
+              margin: 2rem 0;
+            }
+          }
+        }
+        .article-content {
+          padding: 3rem;
+          background-color: $white-color;
+          border-radius: 1rem;
+          @media screen and (max-width: 768px) {
+            flex-direction: column;
+            padding: 2rem !important;
+            .art-text {
+              margin: 1rem 0 !important;
+            }
+          }
+        }
+        .art-img {
+          height: 16rem;
+          img {
+            width: 15rem;
+          }
+        }
+        .art-text {
+          margin: 2rem 0;
+          font-size: 1.4rem;
+          font-family: "Rubik Bold";
+          &:nth-child(3) {
+            min-height: 15rem;
+          }
+          &.font-regular {
+            text-align: left;
+            font-family: "Rubik Regular";
+          }
+        }
+        .text-link {
+          font-size: 1.2rem;
+          font-family: "Rubik Regular";
+          color: $blue-lighter-color;
+          text-align: left;
+        }
+      }
+      .note-contact {
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      .contact-list {
+        padding: 1rem;
+        .contact-box {
+          margin: 1rem 0;
+          padding: 0 1rem;
+        }
+      }
+    }
+  }
+  .terms-condition {
+    font-family: "Rubik Regular";
+    font-size: 1.2rem;
+    line-height: 15px;
+    padding-top: 2rem;
+    color: $primary-text-color;
+  }
+  .list-radio {
+    width: 100%;
+    ul li {
+      &:first-child {
+        padding: 2rem;
+      }
+      &:last-child {
+        padding: 2rem;
+      }
+    }
+    .checkmark {
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+}
+
+.form--contact {
+  .hs-error-msgs.inputs-list {
+    display: none !important;
+  }
+
+  .input {
+    //position: relative;
+  }
+
+  .error {
+    position: static;
+    margin: 0;
+    font-size: 1em;
+    box-shadow: 0px 0px 1px 2px $pink-color inset;
+  }
+}
+.check-mark-opacity {
+  input:checked ~ .checkmark {
+    opacity: 0.5;
+  }
+}
+.opacity-default {
+  opacity: 0.85;
+}
+.active {
+  opacity: 1;
+}
+.fa-quote-left::before,
+.fa-quote-right::before {
+  font-family: "FontAwesome";
+}
+.uniglo {
+  max-width: 15rem;
+}

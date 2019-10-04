@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
+    <link rel="stylesheet" href="dist/styles/main.css">
+    <title>Animation</title>
+    <meta name="description" content="">
+</head>
+
+<body data-title="3.6-screen" class="bg-green" data-js="q2">
+    <div class="container-fluid centered middle thermometer-screen bg-green">
+        <div class="centered">
+            <div class="label-text label-text-locker load-index">
+                <label class="animate fadeIn white-text">
+                    How did your website recover from a disaster like
+                    <span class="color--yellow-lighter">losing data, getting DDoS'd and being hacked or being hijacked with Adwares and Backdoor ?</span>
+                </label>
+            </div>
+            <div class="primary-content load-index">
+                <div class="sick">
+                    <img src="dist/assets/sick-web.gif" />
+                </div>
+                <div id="drag-wrapper" class="thermometer">
+                    <div class="drag-border">
+                        <div id="drag-container" class="progress-bar-content">
+                            <div class="cal" id="level"></div>
+                            <span id="btn-scroll" class="icon-drag box">
+                                <img class="cal" id="btn-scroll" src="dist/assets/drag-icon.svg" />
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="list-radio position-relative">
+                    <ul id="check-list-result">
+                        <li>
+                            <label class="container">
+                                When that happens, we need to call in external professional help, and will be at the mercy of their timelines.
+                                <span class="checkmark" hidden></span>
+                            </label>
+                            <input type="hidden" name="answer_scr_3_6" value="4">
+                        </li>
+                        <li>
+                            <label class="container">
+                                When web disaster strikes, and all we can do in times of crisis is pray, then get around to slowly fixing it.
+
+                                <span class="checkmark" hidden></span>
+                            </label>
+                            <input type="hidden" name="answer_scr_3_6" value="3">
+                        </li>
+                        <li>
+                            <label class="container">
+                                Took us a few days, but we survived it.
+                                <span class="checkmark" hidden></span>
+                            </label>
+                            <input type="hidden" name="answer_scr_3_6" value="2">
+                        </li>
+                        <li class="active">
+                            <label class="container">
+                                Our website is rock-solid. Disasters? Not gonna happen.
+                                <span class="checkmark" hidden></span>
+                            </label>
+                            <input type="hidden" name="answer_scr_3_6" value="1">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box-btn mbt3 load-index">
+                <a id="btn_3_6_submit" class="btn mt-5 btn-primary btn-medium blue-bg color--white btn-next animate fadeIn3s">
+                    Surely secure results should be seen?
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="dist/vendors/jquery-3.3.1.min.js"></script>
+    <script src="dist/vendors/TweenMax.js"></script>
+    <script src="dist/vendors/draggable.min.js"></script>
+    <script src="dist/vendors/ThrowPropsPlugin.min.js"></script>
+    <script src="dist/scripts/main.js"></script>
+    <script>
+        let percent_line = 33,
+            percent_line_head = percent_line,
+            text = "Slide the thermometer!";
+        $("#progress_q", window.parent.document).show();
+        $("#progress_bar_line", window.parent.document).css("width", percent_line + "%");
+        $("#progress_bar_line_head", window.parent.document).css("width", percent_line_head + "%");
+
+        $("#content_tooltip", window.parent.document).html(text);
+    </script>
+</body>
+
+</html>

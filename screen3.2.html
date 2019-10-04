@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/styles/main.css">
+    <title>Animation</title>
+</head>
+
+<body class="bg-green" data-js="q2">
+    <div class="container-fluid centered middle locker-screen">
+        <div class="centered">
+            <div class="label-text label-text-locker load-index">
+                <label class="animate fadeIn white-text">
+                    First, let's take a look at how secure you are with your security.
+                </label>
+            </div>
+            <div class="container-slide animate fadeIn2s load-index">
+                <div class="slide-shield">
+                    <div class="shield stroke-shield position-absolute">
+                        <img src="dist/assets/shield-stroke.png" />
+                    </div>
+
+                    <div id="full-shield" class="full-shield position-absolute">
+                        <img src="dist/assets/shield-fill.png" />
+                    </div>
+                </div>
+                <div id="drag-wrapper" class="progress-bar container">
+                    <div class="drag-border">
+                        <div id="drag-container" class="progress-bar-content">
+                            <span id="dragable" class="icon-drag box">
+                                <img src="dist/assets/indicator.png" />
+                            </span>
+                            <span id="point_0" class="point"></span>
+                            <span id="point_1" class="point"></span>
+                            <span id="point_2" class="point"></span>
+                            <span id="point_3" class="point"></span>
+                            <div id="drag-bar-progress" class="drag-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-slide">
+                    <ul class="items">
+                        <li class="mob">
+                            I've worked with my website security provider for so long we've become best friends. Trust me, I know security.
+                            <input type="hidden" name="answer" value="1">
+                        </li>
+                        <li class="mob">
+                            I check for vulnerabilities regularly, but TBH I wouldn't say my security is flawless.
+                            <input type="hidden" name="answer" value="2">
+                        </li>
+                        <li class="mob">
+                            I've had attacks happen to me more times than I'm comfortable admitting. I need to get it together.
+                            <input type="hidden" name="answer" value="3">
+                        </li>
+                        <li class="active">
+                            Okay, this is silly, but...what do you really mean by "web security"?
+                            <input type="hidden" name="answer" value="4">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="screen3.3.html" id="btn_3_2_submit" class="btn btn-primary mt-5 blue-bg color--white pad-left-right-5 animate fadeIn3s">
+                <span>Click if you're 100% secure in your answer</span>
+            </a>
+        </div>
+    </div>
+    <script src="dist/vendors/jquery-3.3.1.min.js"></script>
+    <script src="dist/vendors/TweenMax.js"></script>
+    <script src="dist/vendors/draggable.min.js"></script>
+    <script src="dist/vendors/ThrowPropsPlugin.min.js"></script>
+    <script src="dist/vendors/fillUpProgress.js"></script>
+    <script src="dist/scripts/main.js"></script>
+    <script>
+        let percent_line = 24,
+            percent_line_head = percent_line,
+            text = "Slide to the correct option.";
+        $("#progress_q", window.parent.document).show();
+        $("#progress_bar_line", window.parent.document).css("width", percent_line + "%");
+        $("#progress_bar_line_head", window.parent.document).css("width", percent_line_head + "%");
+        $("#content_tooltip", window.parent.document).html(text);
+    </script>
+</body>
+
+</html>

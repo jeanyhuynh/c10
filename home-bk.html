@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/styles/main.css">
+  <title>Home Page</title>
+
+</head>
+
+<body id="home" data-title="1.0-screen" class="bg-light-blue">
+  <div class="container-fluid centered middle home">
+    <div class="screen centered middle">
+      <div class="bg-desk centered middle">
+        <div class="popup-box message-box">
+          <img src="dist/assets/talking-bubble.png" />
+        </div>
+        <div class="popup-box question-box">
+          <img src="dist/assets/question-bubble.png" />
+        </div>
+        <div class="popup-box vase-box">
+          <img src="dist/assets/vase.png" />
+        </div>
+        <div class="popup-box cup-box">
+          <img src="dist/assets/cup.png" />
+        </div>
+        <div id="bg-desk" class="content centered middle">
+          <label id="text-src" class="label-text animate fadeIn">
+            How much do you
+            <span class="red-text"> hate </span> your site,
+            <span class="light-blue-text">really</span>?
+          </label>
+
+        </div>
+        <a href="login.html" id="btn-scre" class="fix-width centered btn btn-primary btn-short yellow-bg color--white animate fadeIn3s cta-ver-desk">
+          <span>Find Out Now</span>
+          <span class="fa fa-arrow-circle-o-right"></span>
+        </a>
+      </div>
+
+    </div>
+    <a href="screen2.0.html" id="btn-scre" class="fix-width centered btn btn-primary btn-short yellow-bg color--white animate fadeIn3s cta-ver-mobi">
+      <span>Find Out Now</span>
+      <span class="fa fa-arrow-circle-o-right"></span>
+    </a>
+    <!-- <div class="animate-footer">
+      <div class="animal-left">
+        <img src="dist/assets/gif/rabbit_closedeyes.svg" />
+      </div>
+      <div class="animal-right">
+        <img src="dist/assets/gif/turtle_normal.svg" />
+      </div>
+    </div> -->
+  </div>
+  </div>
+  <script src="dist/vendors/jquery-3.3.1.min.js"></script>
+  <script src="dist/vendors/TweenMax.js"></script>
+  <script src="dist/scripts/main.js"></script>
+  <!-- <script>
+    $('#home').css('width', screen.width);
+    $(window).on("orientationchange", function (event) {
+      location.reload();
+      console.log('width',screen.width )
+      $('#home').css('width', screen.width);
+    });
+  </script> -->
+  <script>
+    $("#progress_q", window.parent.document).hide();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/styles/main.css">
+  <title>Animation</title>
+</head>
+
+<div id="loading" class="hide loading-icon">
+  <img class="jump" src="dist/assets/gif/rabbit_closedeyes.svg" />
+  <span>Loading</span>
+</div>
+
+<body data-title="login" class="bg-yellow">
+  <div class="container-fluid centered middle race-screen">
+    <div class="main-head centered middle">
+      <div class="label-text mt0 pos-inher load-index">
+        <label class="animate fadeIn src-2 ">
+          Time to Sherlock it out. Let’s check your feelings against facts.
+        </label>
+      </div>
+
+      <div id="scr21-btn-find" class="box-search load-index centered">
+        <div id="form-check-url" class="centered w100 mbt3">
+          <input id="input_email" type="text" placeholder="Enter your email" value="" class="animate fadeIn15s" />
+        </div>
+
+        <a href="screen2.0.html" id="btn_submit_email" class="btn btn-primary green-bg color--white animate fadeIn3s">
+          <span>START THE QUIZ</span>
+          <span class="fa fa-long-arrow-right"></span>
+        </a>
+      </div>
+    </div>
+    <span class="text-note white-text mbt3 animate fadeIn3s">
+      We take your personal data seriously. We will not use your email and any other associated data for anything not pertaining
+      to this campaign, and will not be shared with any third parties
+    </span>
+  </div>
+  <script src="dist/vendors/jquery-3.3.1.min.js"></script>
+  <script src="dist/vendors/TweenMax.js"></script>
+  <script src="dist/scripts/main.js"></script>
+  <script>
+    $("#progress_q").hide();
+  </script>
+</body>
+
+</html>

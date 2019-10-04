@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
+  <link rel="stylesheet" href="../dist/styles/main.css">
+  <title>Animation</title>
+</head>
+
+<body data-type="q4" data-js="result_ux" class="bg-yellow result-ux-bg">
+  <div class="container-fluid centered middle q4">
+    <div class="centered">
+      <div class="label-text animate fadeIn">
+        <label id="load_result_title" class="">
+        </label>
+
+      </div>
+      <div class="list-partners centered animate fadeIn12s mbt3">
+        <fieldset class="rating">
+          <input id="5_star" type="radio" name="rating" value="5" />
+          <label class="full" for="5_star">
+            <span class="full" for="5_star"></span>
+          </label>
+          <input type="radio" id="star4half" name="rating" value="4.5" />
+          <label class="half" for="star4half">
+          </label>
+          <input type="radio" id="star4" name="rating" value="4" />
+          <label class="full" for="star4">
+            <span class="full" for="star5"></span>
+          </label>
+          <input id="3_5_star" type="radio" name="rating" value="3.5" />
+          <label class="half" for="3_5_star"></label>
+          <input type="radio" id="star3" name="rating" value="3" />
+          <label class="full" for="star3">
+            <span class="full" for="star5"></span>
+          </label>
+          <input type="radio" id="star2half" name="rating" value="2.5" />
+          <label class="half" for="star2half"></label>
+          <input id="2_star" type="radio" name="rating" value="2" />
+          <label class="full" for="2_star">
+            <span class="full" for="2_star"></span>
+          </label>
+          <input type="radio" id="star1half" name="rating" value="1.5" />
+          <label class="half" for="star1half"></label>
+          <input id="1_star" type="radio" name="rating" value="1" />
+          <label class="full" for="1_star">
+            <span class="full" for="1_star"></span>
+          </label>
+          <input type="radio" id="starhalf" name="rating" value="0.5" />
+          <label class="half" for="starhalf">
+          </label>
+        </fieldset>
+      </div>
+      <div class="flex-box mt5">
+        <a href="../q5/6.0.html" id="btn_3_4_submit" class="btn mt-5 mbt3 load-index btn-medium btn-primary green-bg color--white animate fadeIn3s">
+          <span>WE'RE AT THE LAST SECTION! THIS ONE'S ABOUT YOU! </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="../dist/vendors/jquery-3.3.1.min.js"></script>
+  <script src="../dist/vendors/TweenMax.js"></script>
+  <script src="../dist/scripts/main.js"></script>
+  <script>
+    let percent_line = 78,
+      percent_line_head = percent_line,
+      text = "Click button to continue.";
+    $("#progress_q", window.parent.document).show();
+    $("#progress_bar_line", window.parent.document).css("width", percent_line + "%");
+    $("#progress_bar_line_head", window.parent.document).css("width", percent_line_head + "%");
+    $("#content_tooltip", window.parent.document).html(text);
+    $("#q5_progre", window.parent.document).removeClass("success-color");
+  </script>
+</body>
+
+</html>

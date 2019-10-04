@@ -1,0 +1,42 @@
+{
+  "name": "automate-gulp",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "git@github.com:Fabius-devaholic/automate-gulp.git",
+  "author": "Hieu Tran <vayu411@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build",
+    "assets": "gulp assets",
+    "vendors": "gulp vendors",
+    "deploy": "rsync -ravz --exclude-from 'exclude-list.txt' * constructdigital.net@constructdigital.net:/var/www/constructdigital.net/domains/c10.constructdigital.net/public_html/public/front"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.2.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-connect": "^5.5.0",
+    "gulp-eslint": "^4.0.2",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^3.2.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-stylelint": "^7.0.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "precss": "^3.1.2",
+    "rollup-stream": "^1.24.1",
+    "stylelint": "^9.2.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}

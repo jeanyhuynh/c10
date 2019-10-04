@@ -1,0 +1,141 @@
+.blue-bg {
+  background-color: $color--danube;
+}
+.Q3 {
+  color: $white-color;
+  .label-text {
+    margin: 0;
+  }
+  .small-text {
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-family: "Rubik Regular";
+    line-height: 30px;
+    color: $white-color;
+  }
+  .list-radio .container {
+    font-size: 2rem;
+    line-height: 30px;
+  }
+  .img-responsive {
+    width: 57rem;
+    height: auto;
+  }
+  @media (max-width: 768px) {
+    .img-responsive {
+      width: 100%;
+    }
+  }
+  .img-responsive-small {
+    width: 26rem;
+    height: auto;
+  }
+  .img-left-box {
+    position: relative;
+    width: 26rem;
+    height: 40rem;
+    margin-right: 6rem;
+    // background-image: url("../assets/mobile-bg.png");
+    // background-size: contain;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-image: url("../assets/mobile-bg.png");
+      background-size: cover;
+    }
+    .screen-mobile {
+      position: absolute;
+      height: auto;
+      top: 3rem;
+      transform: matrix(0, 0, 0, 0, 0, 0);
+      opacity: 0;
+      &.result-mob {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+        opacity: 1;
+      }
+      &.mob-inside-medi {
+        width: 19rem;
+      }
+      &.mob-inside-large {
+        width: 100%;
+        top: 0;
+      }
+      &.mob-inside-small {
+        width: 11.5rem;
+        top: 5rem;
+        left: 1rem;
+      }
+    }
+    #photo-opt1 {
+      transform: matrix(1, 0, 0, 1, 0, 0);
+      opacity: 1;
+    }
+    .mob-inside-medi {
+      width: 19rem;
+    }
+    .mob-inside-large {
+      width: 100%;
+      top: 0;
+    }
+    .mob-inside-small {
+      width: 11.5rem;
+      top: 5rem;
+      left: 1rem;
+    }
+    #screen_result_mobile {
+      transform: scale(0);
+    }
+  }
+  @media (max-width: 768px) {
+    .list-radio {
+      ul li {
+        padding: 1.5rem;
+      }
+    }
+  }
+  @media (max-width: 667px) {
+    .option-img {
+      .img-left-box {
+        position: absolute;
+
+        &:after {
+          opacity: 0.3;
+        }
+        .screen-mobile {
+          img {
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+
+  ul li.active {
+    color: $yellow-color;
+  }
+  .list-radio .checkmark {
+    top: 0.2rem;
+  }
+  @media (max-width: 414px) {
+    .list-radio {
+      .container {
+        line-height: 23px;
+      }
+      .checkmark {
+        top: 1rem;
+      }
+    }
+  }
+}
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}

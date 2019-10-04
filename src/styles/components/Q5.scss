@@ -1,0 +1,221 @@
+.q5 {
+  color: $white-color;
+  .wrapper {
+    width: 100%;
+    padding: 8rem 8rem 1rem;
+  }
+  .col-2 {
+    width: 15%;
+  }
+  .col-8 {
+    width: 85%;
+  }
+  .text-note {
+    color: $white-color;
+  }
+  .flash-bg {
+    width: 96rem;
+    //background-image: url("../assets/good.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .option-list {
+    align-items: center;
+  }
+
+  .text-title {
+    font-size: 2rem;
+    line-height: 20px;
+    color: $white-color;
+    font-family: "Rubik Regular";
+    text-align: left;
+  }
+  .text-note-bold,
+  .take-note-slider {
+    font-family: "Rubik Bold";
+    font-size: 2.5rem;
+    line-height: 25px;
+  }
+  .question-check {
+    padding-left: 3rem;
+    text-align: left;
+  }
+  .question-row {
+    align-items: center;
+    padding: 2rem 0;
+    border-bottom: dashed 1px $white-color;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+    .take-note-slider {
+      font-family: "Rubik Bold";
+      font-size: 2rem;
+      line-height: 22px;
+      padding-right: 2rem;
+      span {
+        opacity: 0.5;
+      }
+    }
+    .list-radio {
+      margin: 0;
+      ul li {
+        display: inline-block;
+        width: 44%;
+        padding: 0;
+      }
+      .checkmark {
+        width: 3.2rem;
+        height: 3.2rem;
+        top: -2.2rem;
+        left: auto;
+        right: 0;
+      }
+      .container {
+        padding-left: 0;
+        color: $white-color;
+        text-align: right;
+        width: 50%;
+        label {
+          display: none;
+        }
+        input {
+          width: 100%;
+          height: 3.2rem;
+          top: -2.2rem;
+          left: auto;
+          right: 0;
+          z-index: 5;
+        }
+      }
+    }
+    .list-radio input[type="radio"]:checked ~ span:before,
+    .list-radio input[type="checkbox"]:checked ~ span:before,
+    .list-box input[type="radio"]:checked ~ span:before,
+    .list-box input[type="checkbox"]:checked ~ span:before {
+      font-size: 2rem;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+  .option-question {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+  }
+  .feeling-progress {
+    > div {
+      width: 43rem;
+      height: 26rem;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .wrapper {
+      padding: 3rem;
+    }
+    .flash-bg {
+      width: 100%;
+    }
+
+    .content-box {
+      justify-content: center;
+    }
+    .rating > label:before {
+      font-size: 4em;
+      margin: 4px;
+    }
+    .rating > input:checked ~ label > span,
+    .rating:not(:checked) > span > span:hover,
+    .rating:not(:checked) > span > span:hover ~ label > span {
+      font-size: 6rem;
+    }
+    .col-65,
+    .col-35,
+    .col-8,
+    .col-2 {
+      width: 100%;
+    }
+    .option-question {
+      display: none;
+    }
+    .option-list,
+    .question-row {
+      display: flex;
+      flex-direction: column;
+    }
+    .text-title {
+      text-align: center;
+    }
+    .question-check {
+      padding: 0;
+      text-align: center;
+    }
+    .question-row {
+      .list-radio {
+        display: flex;
+        .container {
+          padding-left: 0;
+          text-align: center;
+          label {
+            display: block;
+            position: absolute;
+            top: -2rem;
+            right: 0;
+          }
+        }
+      }
+      .take-note-slider {
+        line-height: 20px;
+        padding-right: 0;
+        margin-bottom: 2rem;
+      }
+      border-bottom: dashed 1px $white-color;
+      &:first-child {
+        border-bottom: dashed 1px $white-color;
+      }
+    }
+    .title-question-check {
+      .question-row {
+        border-bottom: 0;
+      }
+    }
+    .feeling-progress {
+      margin-bottom: 0;
+      > div {
+        display: flex;
+        height: 35rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .list-radio .checkmark {
+      top: -0.5rem;
+    }
+    .question-row {
+      .list-radio {
+        .container {
+          width: 40%;
+          margin: 1rem 0;
+        }
+        .checkmark {
+          right: auto;
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 1020px) and (max-device-width: 1024px) {
+    .question-row .list-radio .checkmark {
+      left: 2rem;
+    }
+    .feeling-progress > div {
+      width: 30rem;
+      height: 30rem;
+    }
+  }
+}

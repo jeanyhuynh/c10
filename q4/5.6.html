@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
+  <link rel="stylesheet" href="../dist/styles/main.css">
+  <title>Animation</title>
+</head>
+
+<body data-type="q4" class="bg-yellow">
+  <div class="container-fluid centered middle q4">
+    <div class="centered">
+      <div class="load-index label-text animate fadeIn">
+        <label class="">
+          You've managed to bypass the deluge of stale and sloppy websites out there, but you could be better.
+        </label>
+
+      </div>
+      <div class="load-index list-partners animate fadeIn12s mbt3">
+        <fieldset class="rating">
+          <input type="radio" id="star5" name="rating" value="5" />
+          <label class="full" for="star5">
+            <span class="full" for="star5"></span>
+          </label>
+          <input type="radio" id="star4half" name="rating" value="4 and a half" />
+          <label class="half" for="star4half">
+          </label>
+          <input type="radio" id="star4" name="rating" value="4" />
+          <label class="full" for="star4">
+            <span class="full" for="star5"></span>
+          </label>
+          <input type="radio" id="star3half" name="rating" value="3 and a half" />
+          <label class="half" for="star3half"></label>
+          <input type="radio" id="star3" name="rating" value="3" />
+          <label class="full" for="star3">
+            <span class="full" for="star5"></span>
+          </label>
+          <input type="radio" id="star2half" name="rating" value="2 and a half" />
+          <label class="half" for="star2half"></label>
+          <input type="radio" id="star2" name="rating" value="2" />
+          <label class="full" for="star2">
+            <span class="full" for="star5"></span>
+          </label>
+          <input type="radio" id="star1half" name="rating" value="1 and a half" />
+          <label class="half" for="star1half"></label>
+          <input type="radio" id="star1" name="rating" value="1" />
+          <label class="full" for="star1">
+            <span class="full" for="star5"></span>
+          </label>
+          <input type="radio" id="starhalf" name="rating" value="half" />
+          <label class="half" for="starhalf">
+          </label>
+        </fieldset>
+      </div>
+      <div class="flex-box mt5">
+        <a href="screen3.5.html" id="btn_3_4_submit" class="btn mt-5 mbt3 load-index btn-short btn-primary green-bg color--white animate fadeIn3s">
+          <span>Just one more question before we let you off the hook... and this one's about you! </span>
+
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="../dist/vendors/jquery-3.3.1.min.js"></script>
+  <script src="../dist/vendors/TweenMax.js"></script>
+  <script src="../dist/scripts/main.js"></script>
+  <script>
+    let percent_line = 77,
+      percent_line_head = percent_line;
+    $("#progress_q", window.parent.document).show();
+    $("#progress_bar_line", window.parent.document).css("width", percent_line + "%");
+    $("#progress_bar_line_head", window.parent.document).css("width", percent_line_head + "%");
+  </script>
+</body>
+
+</html>

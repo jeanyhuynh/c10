@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
+  <link rel="stylesheet" href="../dist/styles/main.css">
+  <title>Animation</title>
+</head>
+<div id="loading" class="hide loading-icon">
+  <img class="jump" src="../dist/assets/gif/rabbit_jumping happy.svg" />
+  <span>Loading</span>
+</div>
+
+<body class="blue-bg" data-type="q3">
+
+  <div class="container-fluid centered middle Q3">
+    <label class="label-text animate fadeIn load-index">
+      How responsive is your website design for mobile?
+    </label>
+    <div class="body-content option-img centered middle load-index animate fadeIn15s as-row">
+      <div class="img-left-box animate fadeIn2s">
+        <div id="photo-opt1" class="screen-mobile mob-inside-medi animate fadeIn2s">
+          <img src="../dist/assets/screen-mobile41.png" />
+        </div>
+        <div id="photo-opt2" class="screen-mobile mob-inside-medi animate fadeIn2s opacity0">
+          <img src="../dist/assets/screen-mobile42.png" />
+        </div>
+        <div id="photo-opt3" class="screen-mobile mob-inside-large animate fadeIn2s opacity0">
+          <img src="../dist/assets/screen-mobile43.png" />
+        </div>
+        <div id="photo-opt4" class="screen-mobile mob-inside-small animate fadeIn2s opacity0">
+          <img src="../dist/assets/screen-mobile44.png" />
+        </div>
+      </div>
+      <div class="list-radio custom--yellow">
+        <ul id="mobile-list">
+          <li class="active">
+            <label class="container">
+              Super! Which is why I get more mobile traffic, improved SEO, lower bounce rates.
+              <input type="radio" checked="checked" name="mobile-answer" value="1" />
+              <span class="checkmark"></span>
+            </label>
+
+          </li>
+          <li>
+            <label class="container">
+              I'm pretty mobile-adaptive, but it's tricky. Sometimes images or text will be too big, too small, or completely off margin.
+              <input type="radio" name="mobile-answer" value="2" />
+              <span class="checkmark"></span>
+            </label>
+
+          </li>
+          <li>
+            <label class="container">
+              No, we're not mobile-responsive. But my customers aren't keeping tabs on it...right?
+              <input type="radio" name="mobile-answer" value="3" />
+              <span class="checkmark"></span>
+            </label>
+          </li>
+          <li>
+            <label class="container">
+              Does being mobile-ready mean having your smartphone on your person at all times? Because if so then I am definitely mobile-ready.
+              Wait, what?
+              <input type="radio" name="mobile-answer" value="4" />
+              <span class="checkmark"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="w100 centered load-index ">
+      <a href="4.5.html" id="btn_submit_4_1" class="btn btn-short btn-primary yellow-bg color--white animate fadeIn3s">
+        <span>Tap to continue</span>
+        <span class="fa fa-long-arrow-right"></span>
+      </a>
+    </div>
+  </div>
+
+  </div>
+  <script src="../dist/vendors/jquery-3.3.1.min.js"></script>
+  <script src="../dist/vendors/TweenMax.js"></script>
+  <script src="../dist/scripts/main.js"></script>
+  <script>
+    let percent_line = 48,
+      percent_line_head = percent_line,
+      text = "Select the right option.";
+    $("#progress_q", window.parent.document).show();
+    $("#progress_bar_line", window.parent.document).css("width", percent_line + "%");
+    $("#progress_bar_line_head", window.parent.document).css("width", percent_line_head + "%");
+    $("#content_tooltip", window.parent.document).html(text);
+  </script>
+</body>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span id="close_modal" class="close">&times;</span>
+    <div class="centered">
+      <span>
+        Please click
+        <a href="../screen2.1.html">here</a> input your URL.
+      </span>
+    </div>
+
+  </div>
+</div>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
+  <link rel="stylesheet" href="../dist/styles/main.css">
+  <title>Animation</title>
+</head>
+
+<body data-type="q4" class="bg-yellow">
+  <div class="container-fluid centered middle q4">
+    <div class="centered">
+      <div class="load-index label-text animate fadeIn">
+        <label class="">
+          Suppose you’re a customer visiting your website for the first time, how would you feel about it?
+        </label>
+        <span class="text-note">
+          If I saw my website for the first time I'd feel:
+        </span>
+      </div>
+      <div class="load-index list-partners w100 animate fadeIn12s mbt3">
+        <ul id="list_emotion_icon">
+          <li class="active">
+            <a>
+              <img src="../dist/assets/gif/happy-emoji.svg" />
+            </a>
+            <input type="hidden" name="motion-icon" value="1">
+          </li>
+          <li>
+            <a>
+              <img src="../dist/assets/gif/neutral-emoji.svg" />
+            </a>
+            <input type="hidden" name="motion-icon" value="2">
+          </li>
+          <li>
+            <a>
+              <img src="../dist/assets/gif/sad-emoji.svg" />
+            </a>
+            <input type="hidden" name="motion-icon" value="3">
+          </li>
+          <li>
+            <a>
+              <img src="../dist/assets/gif/confused-emoji.svg" />
+            </a>
+            <input type="hidden" name="motion-icon" value="4">
+          </li>
+        </ul>
+      </div>
+
+      <div class="take-note-slider load-index">
+        <span id="emot_0" class="primary-text load-emotion animate fadeIn">Perfect. I'd love this website and be able to find what I need. </span>
+        <span id="emot_1" class="primary-text load-emotion animate fadeIn hide">I'd feel ok, I guess, though I'd think some things look weird. </span>
+        <span id="emot_2" class="primary-text load-emotion animate fadeIn hide">I'd probably wouldn't like what I'm seeing! </span>
+        <span id="emot_3" class="primary-text load-emotion animate fadeIn hide">I'd be unsure about how I'd feel.</span>
+
+      </div>
+
+      <div class="w100 mt5 centered">
+        <a href="5.1.html" id="btn_5_0_submit_emotion" class="btn mt-5 mbt3 load-index btn-medium btn-primary green-bg color--white animate fadeIn3s">
+          <span>Now time to look at the facts.</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="../dist/vendors/jquery-3.3.1.min.js"></script>
+  <script src="../dist/vendors/TweenMax.js"></script>
+  <script src="../dist/scripts/main.js"></script>
+  <script>
+    let percent_line = 60,
+      percent_line_head = percent_line,
+      text = "Select face to see reactions.";
+    $("#progress_q", window.parent.document).show();
+    $("#progress_bar_line", window.parent.document).css("width", percent_line + "%");
+    $("#progress_bar_line_head", window.parent.document).css("width", percent_line_head + "%");
+    $("#q4_progre", window.parent.document).addClass("success-color");
+    $("#content_tooltip", window.parent.document).removeClass("left");
+    $("#content_tooltip", window.parent.document).addClass("right");
+    $("#content_tooltip", window.parent.document).html(text);
+    if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+      $("#list_emotion_icon").addClass("firefox");
+    }
+  </script>
+</body>
+
+</html>

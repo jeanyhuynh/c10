@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/styles/main.css">
+    <title>Animation</title>
+</head>
+
+<body data-title="screen-2-1" class="bg-yellow">
+    <div class="container-fluid centered medium-result-screen race-screen">
+        <div class="main-head centered  main-head-height">
+            <div id="src-20-text" class="pos-inher label-text centered">
+                <label class="animate fadeIn src-2 ">
+                    Time to fess up.
+                </label>
+                <div class="list-radio set-index4">
+                    <ul>
+                        <li class="load-index">
+                            <label class="container">No way. Our website is Usain Bolt on horse steroids.
+                                <input type="radio" name="answer-ques-key1" value="1" />
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li class="load-index">
+                            <label class="container">It’s OK. Would love to turbo it up though.
+                                <input type="radio" name="answer-ques-key1" value="2" />
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li class="load-index">
+                            <label class="container">Yep. Not just a turtle; it's a legit Galapagos tortoise.
+                                <input type="radio" name="answer-ques-key1" value="3" />
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li class="load-index">
+                            <label class="container">Honestly I don't know if my site is fast or slow.
+                                <input type="radio" checked="checked" name="answer-ques-key1" value="4" />
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="screen2.2.html" class="submit mt0 set-index4 btn btn-primary btn-short green-bg color--white animate fadeIn3s">
+                <span>next</span>
+                <span class="fa fa-long-arrow-right"></span>
+            </a>
+        </div>
+        <div class="main-foot">
+            <div class="the-sun">
+                <img src="dist/assets/the-sun.png" class="" />
+            </div>
+            <div class="the-road road-bg no-animation">
+            </div>
+            <div class="animals-collect">
+                <div class="position-relative left-side">
+                    <div class="shadow-animal shadow-turtle">
+                        <img src="dist/assets/turtle-shadow.png" />
+                    </div>
+                    <div class="turtle racer">
+                        <img src="dist/assets/gif/turtle_normal.svg" />
+                    </div>
+                </div>
+                <div class="position-relative right-side">
+                    <div class="shadow-animal shadow-rabbit">
+                        <img src="dist/assets/rabbit-shadow.png" />
+                    </div>
+                    <div class="rabbit racer">
+                        <img src="dist/assets/gif/rabbit_closedeyes.svg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="dist/vendors/jquery-3.3.1.min.js"></script>
+    <script src="dist/vendors/TweenMax.js"></script>
+    <script src="dist/scripts/main.js"></script>
+    <script>
+        let percent_line = Math.round(4.25 * 2),
+            percent_line_head = percent_line,
+            text = "Select the right option";
+        $("#progress_q", window.parent.document).show();
+        $("#progress_bar_line", window.parent.document).css("width", percent_line + "%");
+        $("#progress_bar_line_head", window.parent.document).css("width", percent_line_head + "%");
+        $("#content_tooltip", window.parent.document).html(text);
+    </script>
+</body>
+
+</html>

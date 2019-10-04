@@ -1,0 +1,322 @@
+.result-ux-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../assets/flare.svg);
+}
+.q4 {
+  .list-radio {
+    width: 46rem;
+    margin: 2.5rem 0 0;
+    ul li {
+      &:first-child {
+        padding-bottom: 2rem;
+      }
+      &:last-child {
+        padding-top: 2rem;
+      }
+    }
+  }
+
+  .text-note-regular {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: "Rubik Regular";
+    font-size: 2.5rem;
+    line-height: 35px;
+    margin-bottom: 2rem;
+  }
+  .text-note,
+  .take-note-slider {
+    font-size: 3rem;
+    line-height: 45px;
+    font-family: "Rubik Bold";
+  }
+  .visitors {
+    width: 30rem;
+    height: auto;
+    margin-right: 7rem;
+  }
+  .reported {
+    width: 30rem;
+    height: auto;
+    margin-left: 10rem;
+    transform: skewX(6deg);
+  }
+  .check-box {
+    display: flex;
+    width: 100%;
+  }
+  #slider_circle {
+    .rs-range-color {
+      background-color: $blue-lighter-color !important;
+    }
+    .rs-bg-color {
+      background-color: $bg-yellow-color !important;
+    }
+    .rs-tooltip-text {
+      color: $blue-lighter-color !important;
+    }
+  }
+  .draggable-box {
+    .disabled-box {
+      opacity: 0.5;
+      cursor: no-drop;
+    }
+    #container {
+      position: relative;
+    }
+    .drag-area {
+      width: 46rem;
+      height: 36rem;
+      background: rgba(255, 255, 255, 0.5);
+      padding: 20px;
+    }
+    #dropArea {
+      background: rgba(255, 255, 255, 1);
+      padding: 0;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      .body-draggable {
+        width: 90%;
+        height: 70%;
+        padding: 20px;
+      }
+    }
+    .box {
+      position: absolute;
+      padding: 2rem 3rem;
+      text-align: center;
+      line-height: 40px;
+      font-size: 2.4rem;
+      color: white;
+      border-radius: 5px;
+      background-color: $yellow-color;
+      opacity: 1;
+      &.actived {
+        background-color: $blue-lighter-color;
+      }
+    }
+    #box1 {
+      top: 0px;
+    }
+    #box2 {
+      top: 0;
+      left: 50%;
+    }
+    #box3 {
+      top: 10rem;
+    }
+    #box4 {
+      top: 10rem;
+      left: 40%;
+    }
+    #box5 {
+      top: 20rem;
+    }
+    a {
+      color: $white-color;
+    }
+
+    code {
+      color: $white-color;
+      font-size: 1.2em;
+    }
+    p {
+      width: 600px;
+      margin-top: 8px;
+    }
+  }
+  .take-note {
+    min-height: 0;
+    margin: 0;
+  }
+  .list-box {
+    margin: 4rem 0;
+    .container {
+      padding-left: 6rem;
+    }
+  }
+  @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+  fieldset,
+  label {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 20px;
+  }
+  h1 {
+    font-size: 1.5em;
+    margin: 10px;
+  }
+
+  /****** Style Star Rating Widget *****/
+
+  .rating {
+    border: none;
+    float: left;
+  }
+
+  .rating > input {
+    display: none;
+  }
+  .rating > label.full {
+    position: relative;
+  }
+  .rating > label.half {
+    font-size: 0;
+  }
+  .rating > label:before {
+    margin: 5px;
+    padding: 1rem;
+    font-size: 7em;
+    font-family: "FontAwesome";
+    display: inline-block;
+    content: "\f006";
+  }
+
+  .rating > label > span {
+    font-size: 0;
+  }
+  .rating > label > span:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 5px;
+    padding: 1rem;
+
+    font-family: "FontAwesome";
+    display: inline-block;
+    content: "\f005";
+  }
+  .rating > .half:before {
+    content: "\f089";
+    position: absolute;
+  }
+
+  .rating > label {
+    color: $yellow-darker-color;
+    float: right;
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .rating > input:checked ~ label,
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: $yellow-darker-color;
+  }
+  .rating > input:checked ~ label.half,
+  .rating:not(:checked) > label.half:hover,
+  .rating:not(:checked) > label.half:hover ~ label.half {
+    font-size: 1.6rem;
+  }
+  .rating > input:checked ~ label > span,
+  .rating:not(:checked) > span > span:hover,
+  .rating:not(:checked) > span > span:hover ~ label > span {
+    font-size: 11rem;
+    color: $yellow-darker-color;
+  }
+  .rating > input:checked + label:hover,
+  .rating > input:checked ~ label:hover,
+  .rating > label:hover ~ input:checked ~ label,
+  .rating > input:checked ~ label:hover ~ label {
+    color: $yellow-darker-color;
+  }
+  @media screen and (max-width: 600px) {
+    .visitors {
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 768px) {
+    .reported {
+      margin-left: 0;
+    }
+    .list-partners {
+      ul li {
+        margin: 3rem 1rem;
+        &:first-child {
+          margin: 3rem 1rem;
+        }
+      }
+    }
+    .text-note,
+    .take-note-slider {
+      line-height: 30px;
+    }
+    .content-box {
+      justify-content: center;
+    }
+    .visitors {
+      margin-right: 0;
+    }
+
+    .rating > label:before {
+      font-size: 4em;
+      margin: 4px;
+    }
+    .rating > input:checked ~ label > span,
+    .rating:not(:checked) > span > span:hover,
+    .rating:not(:checked) > span > span:hover ~ label > span {
+      font-size: 6rem;
+    }
+  }
+  @media (max-width: 414px) {
+    .is-mobile {
+      display: none;
+    }
+    .list-radio,
+    .list-box {
+      width: 100%;
+      .container {
+        line-height: 25px;
+      }
+      .list-radio .checkmark {
+        top: 0rem;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .draggable-page {
+    .body-content.as-row {
+      flex-direction: row;
+      .content-box {
+        width: 50%;
+        &:first-child {
+          margin-right: 4rem;
+        }
+      }
+    }
+    .draggable-box {
+      .drag-area,
+      #dropArea {
+        width: 100%;
+        height: 55rem;
+        padding: 2rem;
+      }
+      #dropArea {
+        padding: 0 0 4rem;
+        width: 100%;
+      }
+      .box {
+        position: static;
+        margin-bottom: 2rem;
+        padding: 2rem 0;
+        width: 100%;
+        font-size: 2rem;
+        line-height: 30px;
+      }
+    }
+  }
+  // .list-radio,
+  // .list-box {
+  //   width: 100%;
+  //   .container {
+  //     line-height: 35px;
+  //   }
+  // }
+}

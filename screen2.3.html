@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/styles/main.css">
+    <title>Animation</title>
+</head>
+
+<body data-title="race-screen" data-js="race-screen-result" class="bg-yellow">
+    <div class="container-fluid centered race-screen site-fast">
+        <div class="main-head main-head-height centered">
+            <label class="label-text animate fadeIn load-index">
+                <span id="title_quiz">
+                </span>
+                <span class="text-note">
+                    Full in-depth website assessment for you at the end of the quiz!
+                </span>
+            </label>
+            <a href="screen3.0.html" class="btn btn-primary btn-medium green-bg color--white animate fadeIn3s">
+                <span>Hop on to the next question</span>
+                <span class="fa fa-long-arrow-right"></span>
+            </a>
+        </div>
+        <div class="main-foot load-index">
+            <div class="the-sun animate opacity0">
+                <img src="dist/assets/the-sun.png" class="" />
+            </div>
+            <div class="the-road animate road-bg">
+            </div>
+            <div class="animals-collect">
+                <div class="position-relative right-side">
+                    <div class="shadow-animal shadow-rabbit opacity0">
+                        <img src="dist/assets/shadow-rabbit-fast.png" />
+                    </div>
+                    <div class="rabbit racer opacity0">
+                        <img src="dist/assets/gif/rabbit_jumping happy.svg" />
+                    </div>
+                </div>
+                <div id="left-band" class="left-band position-absolute opacity0">
+                    <img src="dist/assets/win-band-left.png" />
+                </div>
+                <div id="right-band" class="right-band position-absolute opacity0">
+                    <img src="dist/assets/win-band-right.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dist/vendors/jquery-3.3.1.min.js"></script>
+    <script src="dist/vendors/TweenMax.js"></script>
+    <script src="dist/scripts/main.js"></script>
+    <script>
+        let percent_line = 18,
+            percent_line_head = percent_line,
+            text = "Click 'next' to continue.";
+        $("#progress_q", window.parent.document).show();
+        $("#progress_bar_line", window.parent.document).css("width", percent_line + "%");
+        $("#progress_bar_line_head", window.parent.document).css("width", percent_line_head + "%");
+        $("#content_tooltip", window.parent.document).html(text);
+        $("#q2_progre", window.parent.document).removeClass("success-color");
+    </script>
+</body>
+
+</html>

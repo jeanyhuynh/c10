@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
+    <link rel="stylesheet" href="dist/styles/main.css">
+    <title>Animation</title>
+</head>
+
+<body class="bg-green" data-screen="sreen-security" data-js="q2">
+    <div class="container-fluid centered middle locker-screen bg-green">
+        <div class="centered">
+            <div class="label-text label-text-locker load-index">
+                <label id="text_result_security" class="animate fadeIn white-text">
+                    Your website is not as secure as you think.
+
+                </label>
+
+            </div>
+            <a class="sload-index icon icon-locked animate scale-zoom">
+
+                <img src="dist/assets/cracked-locker.png" />
+
+            </a>
+            <div class="take-note w100 white-text load-index note-result">
+                Your full assessment is at the end of this quiz! 3 more questions to go!
+            </div>
+            <div class="box-btn load-index mt0">
+                <a href="q3/4.0.html" id="btn-next-locker" class="btn btn-primary btn-medium mt0 blue-bg color--white btn-next animate fadeIn3s">
+                    Show me the secure way to the next question.
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="dist/vendors/jquery-3.3.1.min.js"></script>
+    <script src="dist/vendors/TweenMax.js"></script>
+    <script src="dist/scripts/main.js"></script>
+    <script>
+        let percent_line = 38,
+            percent_line_head = percent_line,
+            text = "Phew";
+        $("#progress_q", window.parent.document).show();
+        $("#progress_bar_line", window.parent.document).css("width", percent_line + "%");
+        $("#progress_bar_line_head", window.parent.document).css("width", percent_line_head + "%");
+        $("#content_tooltip", window.parent.document).html(text);
+        $("#q3_progre", window.parent.document).removeClass("success-color");
+    </script>
+</body>
+
+</html>

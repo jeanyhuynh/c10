@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
+  <link rel="stylesheet" href="../dist/styles/main.css">
+  <title>Animation</title>
+</head>
+
+<body data-type="q5" class="bg-green">
+  <div class="container-fluid centered middle q5">
+    <div class="centered">
+      <div class="load-index white-text label-text animate fadeIn">
+        <label class="">
+          We’ve been going on and on about how to make your website click-worthy to people.
+        </label>
+        <span class="text-note white-text">
+          But how’s the browsing experience for the person who spends the most time on it
+          <br> (hint: It’s not your mother)—you?
+        </span>
+        <span class="text-note-bold white-text">
+          Moment of truth: How user-friendly is your website?
+        </span>
+      </div>
+      <div class="load-index list-partners w100 animate fadeIn12s mbt3">
+        <ul id="list_emotion_icon">
+          <li class="active">
+            <a>
+              <img src="../dist/assets/gif/happy-emoji.svg" />
+            </a>
+            <input type="hidden" name="motion-icon" value="1">
+          </li>
+          <li>
+            <a>
+              <img src="../dist/assets/gif/neutral-emoji.svg" />
+            </a>
+            <input type="hidden" name="motion-icon" value="2">
+          </li>
+          <li>
+            <a>
+              <img src="../dist/assets/gif/sad-emoji.svg" />
+            </a>
+            <input type="hidden" name="motion-icon" value="3">
+          </li>
+          <li>
+            <a>
+              <img src="../dist/assets/gif/confused-emoji.svg" />
+            </a>
+            <input type="hidden" name="motion-icon" value="4">
+          </li>
+        </ul>
+      </div>
+      <div class="take-note-slider load-index">
+        <span id="emot_0" class="load-emotion animate fadeIn">User-friendly beyond compare! Works like a dream! Can update whenever, wherever!</span>
+        <span id="emot_1" class="load-emotion animate fadeIn hide">Navigation is unwieldy. Outdated—gasp!—design. But I got this. I can change it anytime.</span>
+        <span id="emot_2" class="load-emotion animate fadeIn hide">It’s. Almost. Impossible. To. Make. Changes. On. My. End.</span>
+        <span id="emot_3" class="load-emotion animate fadeIn hide">Fine, it’s bad. But what do you mean by, I can update my website on my own?</span>
+
+      </div>
+
+      <div class="w100 centered mt5">
+        <a href="6.1.html" id="btn_6_0_submit_emotion" class="btn mt-5 load-index btn-medium btn-primary blue-bg color--white animate fadeIn3s">
+          <span>You know the drill...</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <script src="../dist/vendors/jquery-3.3.1.min.js"></script>
+  <script src="../dist/vendors/TweenMax.js"></script>
+  <script src="../dist/scripts/main.js"></script>
+  <script>
+    let percent_line = 80,
+      percent_line_head = percent_line,
+      text = "Select a face to see options.";
+    $("#progress_q", window.parent.document).show();
+    $("#progress_bar_line", window.parent.document).css("width", percent_line + "%");
+    $("#progress_bar_line_head", window.parent.document).css("width", percent_line_head + "%");
+    $("#q5_progre", window.parent.document).addClass("success-color");
+    $("#content_tooltip", window.parent.document).html(text);
+    if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+      $("#list_emotion_icon").addClass("firefox");
+    }
+  </script>
+</body>
+
+</html>

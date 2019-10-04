@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
+  <link rel="stylesheet" href="../dist/styles/main.css">
+  <title>Animation</title>
+</head>
+
+<body data-type="q3" class="blue-bg">
+  <div class="container-fluid centered middle Q3">
+    <div class="box-text">
+      <label class="size-lg load-index animate fadeIn">
+        A website isn't just accessible on desktops, but mobile too. We'll now analyse your mobile site.
+      </label>
+      <br>
+      <label class="small-text load-index animate fadeIn15s">
+        Out of 2 trillion website visits in the U.S. in 2017, 63% were done over mobile. That only means your website should be mobile-ready.
+      </label>
+    </div>
+    <div class="body-content centered middle">
+      <div class="img-responsive load-index animate fadeIn2s">
+        <img src="../dist/assets/gif/responsive.svg" />
+      </div>
+    </div>
+    <div class="flex-box centered w100">
+      <a href="4.1.html" class="btn load-index btn-short btn-primary yellow-bg color--white animate fadeIn3s">
+        <span>LET'S FIND OUT HOW MOBILE-READY YOU ARE</span>
+        <span class="fa fa-long-arrow-right"></span>
+      </a>
+    </div>
+  </div>
+  </div>
+  <script src="../dist/vendors/jquery-3.3.1.min.js"></script>
+  <script src="../dist/vendors/TweenMax.js"></script>
+  <script src="../dist/scripts/main.js"></script>
+  <script>
+    let percent_line = 40,
+      percent_line_head = percent_line,
+      text = "Click button to continue.";
+    $("#progress_q", window.parent.document).show();
+    $("#progress_bar_line", window.parent.document).css("width", percent_line + "%");
+    $("#progress_bar_line_head", window.parent.document).css("width", percent_line_head + "%");
+    $("#q3_progre", window.parent.document).addClass("success-color");
+    $("#content_tooltip", window.parent.document).html(text);
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
+  <link rel="stylesheet" href="../dist/styles/main.css">
+  <title>Animation</title>
+</head>
+
+<body data-type="q4" data-js="q4-experience-test" class="bg-yellow">
+  <div class="container-fluid centered middle q4">
+    <div class="centered">
+      <div class="load-index label-text animate fadeIn">
+        <label class="animate fadeIn primary-text">
+          Have you ever run a user experience test on your website?
+        </label>
+      </div>
+
+      <div class="body-content mt0 centered middle load-index animate fadeIn15s as-row">
+        <div class="content-box animate fadeIn2s">
+          <div class="reported animate fadeIn2s">
+            <img src="../dist/assets/gif/report.svg" />
+          </div>
+        </div>
+        <div class="list-radio content-box">
+          <ul id="experience_list">
+            <li class="actived">
+              <label class="container">Course I have! Full in-depth UA!
+                <input type="radio" checked="checked" name="experience-test" value="1" />
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <label class="container">
+                I've studied Analytics/Heatmaps before
+                <input type="radio" name="experience-test" value="2" />
+                <span class="checkmark"></span>
+              </label>
+
+            </li>
+            <li>
+              <label class="container">
+                No, but I've always wanted to
+                <input type="radio" name="experience-test" value="3" />
+                <span class="checkmark"></span>
+              </label>
+
+            </li>
+            <li>
+              <label class="container">
+                No, I haven't.
+                <input type="radio" name="experience-test" value="4" />
+                <span class="checkmark"></span>
+              </label>
+
+            </li>
+            <li>
+              <label class="container">
+                I don't want/know how to run a test.
+                <input type="radio" name="experience-test" value="5" />
+                <span class="checkmark"></span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex-box">
+        <a href="5.5.html" id="btn_5_4_submit_exper" class="btn mt0 mbt3 load-index btn-medium btn-primary green-bg color--white animate fadeIn3s">
+          <span>Let’s get to the bottom of this, shall we?</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="../dist/vendors/jquery-3.3.1.min.js"></script>
+  <script src="../dist/vendors/TweenMax.js"></script>
+  <script src="../dist/scripts/main.js"></script>
+  <script>
+    let percent_line = 75,
+      percent_line_head = percent_line,
+      text = "Select one option to continue.";
+    $("#progress_q", window.parent.document).show();
+    $("#progress_bar_line", window.parent.document).css("width", percent_line + "%");
+    $("#progress_bar_line_head", window.parent.document).css("width", percent_line_head + "%");
+    $("#content_tooltip", window.parent.document).html(text);
+  </script>
+</body>
+
+</html>

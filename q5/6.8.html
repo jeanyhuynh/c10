@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
+  <link rel="stylesheet" href="../dist/styles/main.css">
+  <title>Animation</title>
+</head>
+
+<body data-type="q5" data-js="q5-result" class="bg-green q5">
+  <div class="container-fluid wrapper centered middle ssl-screen">
+    <div class="centered flash-bg">
+      <div class="label-text load-index">
+        <label id="result_feeling_text" class="animate fadeIn white-text">
+          "You know how you believed that your website’s user-friendliness is beyond compare? Well, about that… "
+        </label>
+      </div>
+      <div class="feeling-progress animate fadeIn load-index">
+        <div id="result_feeling_img" class="animate fadeIn2s feeling-img">
+          <img src="../dist/assets/gif/sad-web.svg" />
+        </div>
+      </div>
+      <div class="flex-box mt5 centered">
+        <a href="../q6/7.0.html" class="btn mt-5 mbt3 load-index btn-medium btn-primary blue-bg color--white animate fadeIn3s">
+          <span>Now, how much should I hate my site?</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="../dist/vendors/jquery-3.3.1.min.js"></script>
+  <script src="../dist/vendors/TweenMax.js"></script>
+  <script src="../dist/scripts/main.js"></script>
+  <script>
+    let percent_line = 96,
+      percent_line_head = percent_line,
+      text = "We're almost done!";
+    $("#progress_q", window.parent.document).show();
+    $("#progress_bar_line", window.parent.document).css("width", percent_line + "%");
+    $("#progress_bar_line_head", window.parent.document).css("width", percent_line_head + "%");
+    $("#q6_progre", window.parent.document).removeClass("success-color");
+    $("#content_tooltip", window.parent.document).html(text);
+  </script>
+</body>
+
+</html>

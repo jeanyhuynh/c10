@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
+  <link rel="stylesheet" href="../dist/styles/main.css">
+  <title>Animation</title>
+</head>
+
+<body data-type="q4" data-js="q4-draggable" class="bg-yellow draggable-page">
+  <div class="container-fluid centered middle q4">
+    <div class="centered">
+      <div class="load-index label-text animate fadeIn">
+        <label class="animate fadeIn primary-text">
+          Pick the following words you
+          <span class="green-text"> have in </span> your primary website menu.
+        </label>
+      </div>
+
+      <div class="body-content mt0 centered w100 load-index animate fadeIn15s as-row">
+        <div class="content-box centered draggable-box animate fadeIn2s">
+          <div class="drag drag-area">
+            <div id="container">
+              <div id="box1" class="box">Services
+                <input type="hidden" name="get_menu_drag" value="5">
+              </div>
+              <div id="box2" class="box">Products
+                <input type="hidden" name="get_menu_drag" value="4">
+              </div>
+              <div id="box3" class="box">About
+                <input type="hidden" name="get_menu_drag" value="1">
+              </div>
+              <div id="box4" class="box">Who We Are
+                <input type="hidden" name="get_menu_drag" value="2">
+              </div>
+              <div id="box5" class="box">What We Do
+                <input type="hidden" name="get_menu_drag" value="3">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-box centered draggable-box">
+          <div id="dropArea" class="drag-area">
+            <div class="header-draggable">
+              <img src="../dist/assets/header-draggable.png" alt="" />
+            </div>
+            <div class="body-draggable">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="take-note animate fadeIn3s load-index">
+        Drag words to website
+      </div>
+      <div class="list-box centered">
+        <label class="container">
+          I have none of them
+          <input id="check_no_have" type="checkbox" name="check_no_have" value="" />
+          <span class="checkmark check-box-mark"></span>
+        </label>
+      </div>
+      <div class="flex-box">
+        <a href="5.4.html" id="btn_5_3_submit_menu" class="btn mt0 mbt3 load-index btn-short btn-primary green-bg color--white animate fadeIn3s">
+          <span>Next Question</span>
+          <span class="fa fa-long-arrow-right"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="../dist/vendors/jquery-3.3.1.min.js"></script>
+  <script src="../dist/vendors/draggable.min.js"></script>
+  <script src="../dist/vendors/TweenMax.js"></script>
+  <script src="../dist/scripts/main.js"></script>
+  <script>
+    let percent_line = 72,
+      percent_line_head = percent_line,
+      text = "Drag items into the website.";
+    $("#progress_q", window.parent.document).show();
+    $("#progress_bar_line", window.parent.document).css("width", percent_line + "%");
+    $("#progress_bar_line_head", window.parent.document).css("width", percent_line_head + "%");
+    $("#content_tooltip", window.parent.document).html(text);
+  </script>
+</body>
+
+</html>

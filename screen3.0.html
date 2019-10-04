@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/styles/main.css">
+    <title>Animation</title>
+</head>
+
+<body data-title="3.0-screen" class="bg-green" data-js="q2">
+    <div class="container-fluid centered locker-screen">
+        <div class="centered">
+            <div class="label-text height-label-lock label-text-locker load-index">
+                <label id="src-30-text" class="animate fadeIn white-text ">
+                    Let's talk web security: How safe do users feel when they step into your cyber crib?
+                </label>
+                <label id="src-31-text" class="animate fadeIn15s white-text size-lg hide">
+                    It takes the average hacker about 0.29 milliseconds to crack a 7-character password. That's 90.3 seconds faster than the
+                    actual length of a moment.
+                    <br>
+                    <span class="take-note white-text">
+                        Thankfully, security goes far beyond just passwords.
+                    </span>
+                </label>
+            </div>
+        </div>
+        <div class="centered">
+            <a id="locker" class="icon animate icon-locker scale-zoom">
+                <span id="lock-head" class="lock-head position-absolute">
+                    <img src="dist/assets/locker-head.svg" />
+                </span>
+                <span id="lock-body" class="lock-body position-absolute">
+                    <img src="dist/assets/locker-body.svg" />
+                </span>
+            </a>
+        </div>
+        <div class="take-note white-text load-index animate fadeIn3s">
+            <span id="note-30" class="">
+                Click and hold the lock so we can pick your security measures apart.
+            </span>
+            <span id="note-31" class="hide">
+                Is your website super secure or are you click-and-crack bait for bored hackers?
+            </span>
+        </div>
+        <a href="screen3.2.html" id="btn-next-locker" class="btn btn-primary btn-medium blue-bg color--white animate fadeIn3s hide">
+            <!-- <span>Is your website super secure or are you click-and-crack bait for bored Russian hackers?</span> -->
+            <span>
+                Find out how secure your website is.
+            </span>
+            <span class="fa fa-long-arrow-right"></span>
+        </a>
+    </div>
+
+    <script src="dist/vendors/jquery-3.3.1.min.js"></script>
+    <script src="dist/vendors/TweenMax.js"></script>
+    <script src="dist/scripts/main.js"></script>
+    <script>
+        let percent_line = 20,
+            percent_line_head = percent_line,
+            text = "Click and hold the lock!";
+        $("#progress_q", window.parent.document).show();
+        $("#progress_bar_line", window.parent.document).css("width", percent_line + "%");
+        $("#progress_bar_line_head", window.parent.document).css("width", percent_line_head + "%");
+        $("#q2_progre", window.parent.document).addClass("success-color");
+        $("#content_tooltip", window.parent.document).html(text);
+    </script>
+</body>
+
+</html>

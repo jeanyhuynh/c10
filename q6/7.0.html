@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../dist/styles/main.css">
+  <title>Animation</title>
+</head>
+
+<body data-type="q6" class="q6">
+  <div class="part-line part-line-1">
+    <div class="centered wrapper">
+      <div class="body-content as-row w100">
+        <div class="col-6">
+          <div class="load-index note-result">
+            Was this quiz too short (too short you wanted more)?
+          </div>
+          <div class="question-check">
+            <div class="list-radio">
+              <ul>
+                <li>
+                  <label class="container">
+                    <input type="radio" name="option_answer_1" value="1" checked />
+                    <span class="checkmark"></span>
+                    Yes
+                  </label>
+
+                </li>
+                <li>
+                  <label class="container">
+                    <input type="radio" name="option_answer_1" value="2" />
+                    <span class="checkmark"></span>
+                    No
+                  </label>
+
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-6 load-index flex-end">
+          <div class="group-power">
+            <div class="strong-ico position-absolute">
+              <img src="../dist/assets/gif/strong-web.svg" />
+            </div>
+            <div class="please-ico position-absolute">
+              <img src="../dist/assets/gif/pleased-web.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="part-line part-line-2">
+    <div class="centered wrapper">
+      <div class="body-content as-row w100">
+        <div class="col-6 centered">
+          <div class="group-kids">
+            <div class="car-anim animate car-animation">
+              <img src="../dist/assets/gif/car-toy.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="col-6 load-index">
+          <div class="load-index white-text note-result">
+            Was this quiz delightfully simple to answer?
+          </div>
+          <div class="question-check">
+            <div class="list-radio custom--yellow">
+              <ul>
+                <li>
+                  <label class="container white-text">
+                    <input type="radio" name="option_answer_2" value="1" checked />
+                    <span class="checkmark"></span>
+                    Yes
+                  </label>
+
+                </li>
+                <li>
+                  <label class="container white-text">
+                    <input type="radio" name="option_answer_2" value="2" />
+
+                    <span class="checkmark"></span>
+                    No
+                  </label>
+
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="part-line part-line-3">
+    <div class="centered wrapper">
+      <div class="body-content as-row w100">
+        <div class="col-6 load-index">
+          <div class=" white-text note-result">
+            Are you (or your department) in charge of updating your site?
+          </div>
+          <div class="question-check">
+            <div class="list-radio custom--yellow">
+              <ul>
+                <li>
+                  <label class="container white-text">
+                    <input type="radio" name="option_answer_3" value="1" checked />
+                    <span class="checkmark"></span>
+                    Yes
+                  </label>
+
+                </li>
+                <li>
+                  <label class="container white-text">
+                    <input type="radio" name="option_answer_3" value="2" />
+
+                    <span class="checkmark"></span>
+                    No
+                  </label>
+
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-6 load-index flex-end">
+          <div class="group-boss">
+            <img src="../dist/assets/gif/boss.svg" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="part-line-foot">
+    <div class="w100 mt5 centered">
+      <a href="7.1.html" id="btn_7_0_submit_power" class="btn mt-5 mbt3 load-index btn-short btn-primary blue-bg color--white animate fadeIn3s">
+        <span>Beep Boop. Analysis in Progress.</span>
+      </a>
+    </div>
+  </div>
+
+  <script src="../dist/vendors/jquery-3.3.1.min.js"></script>
+  <script src="../dist/vendors/TweenMax.js"></script>
+  <script src="../dist/scripts/main.js"></script>
+  <script>
+    let percent_line = 98,
+      percent_line_head = percent_line,
+      text = "Onto the results!";
+    $("#progress_q", window.parent.document).show();
+    $("#progress_bar_line", window.parent.document).css("width", percent_line + "%");
+    $("#progress_bar_line_head", window.parent.document).css("width", percent_line_head + "%");
+    $("#q6_progre", window.parent.document).addClass("success-color");
+    $("#content_tooltip", window.parent.document).html(text);
+  </script>
+</body>
+
+</html>

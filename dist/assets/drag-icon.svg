@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>2 years</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="25" cy="25" r="25"></circle>
+        <filter x="-30.0%" y="-30.0%" width="160.0%" height="160.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-/-3.2.Internal_C10_Q2" transform="translate(-565.000000, -527.000000)">
+            <g id="content" transform="translate(250.000000, 150.000000)">
+                <g id="Group-3" transform="translate(0.000000, 167.000000)">
+                    <g id="slider" transform="translate(325.000000, 3.000000)">
+                        <g id="2-years" transform="translate(25.000000, 242.000000) rotate(-90.000000) translate(-25.000000, -242.000000) translate(0.000000, 217.000000)">
+                            <g id="Oval-2-Copy">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            </g>
+                            <g id="Group" transform="translate(15.000000, 15.000000)" fill="#333333" font-family="FontAwesome" font-size="20" font-weight="normal">
+                                <text id="angle-left---FontAwesome">
+                                    <tspan x="0" y="17"></tspan>
+                                </text>
+                                <text id="angle-right---FontAwesome">
+                                    <tspan x="13" y="17"></tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

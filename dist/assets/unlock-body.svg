@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="270px" height="229px" viewBox="0 0 270 229" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-/-3.1.Internal_C10_Q2" transform="translate(-614.000000, -411.000000)">
+            <g id="content" transform="translate(250.000000, 150.000000)">
+                <g id="Group" transform="translate(364.000000, 151.000000)">
+                    <g id="locker">
+                        <path d="M212,233.122306 C212,233.384262 212,233.646218 211.986888,233.908173 C211.570877,292.026597 164.283878,339 106.005364,339 C47.7173139,339 0.430315264,292.026597 0.0119200904,233.908173 C0,233.646218 0,233.384262 0,233.122306 L0,166.275998 C0,160.048599 5.05531034,155 11.3014377,155 L200.699754,155 C206.945882,155 212,160.048599 212,166.275998 L212,233.122306 Z" id="Fill-5" fill="#FBCE00"></path>
+                        <path d="M130,222.779667 C130,209.645535 119.254896,199 105.9994,199 C92.7451039,199 82,209.645535 82,222.779667 C82,231.747896 87.014782,239.550339 94.412696,243.600853 L94.412696,269.520571 C94.412696,275.859833 99.6015607,281 105.9994,281 C112.398439,281 117.586103,275.859833 117.586103,269.520571 L117.586103,243.600853 C124.984017,239.550339 130,231.747896 130,222.779667" id="Fill-8" fill="#4C2C0D"></path>
+                    </g>
+                    <path d="M245,146 L265,146" id="Line" stroke="#FBCE00" stroke-width="10" stroke-linecap="round"></path>
+                    <path d="M240,125 L257.320508,115" id="Line-Copy" stroke="#FBCE00" stroke-width="10" stroke-linecap="round"></path>
+                    <path d="M240,177 L257.320508,167" id="Line-Copy-2" stroke="#FBCE00" stroke-width="10" stroke-linecap="round" transform="translate(248.660254, 172.000000) scale(-1, 1) translate(-248.660254, -172.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="fb:app_id" content="230791374314580">
+  <meta property="og:url" content="http://c10.constructdigital.net/front">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Find out where your site stands in this quiz!">
+  <meta property="og:description" content="Find out where your site stands in this quiz!">
+  <meta property="og:image" content="http://c10.constructdigital.net/front/dist/assets/homepage-img-social.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <script id="facebook-jssdk" src="https://connect.facebook.net/en_US/sdk.js"></script>
+  <title>Home</title>
+  <link rel="shortcut icon" href="dist/assets/favicon.ico">
+  <link rel="stylesheet" href="dist/styles/main.css">
+
+</head>
+
+<body style="margin:0px;padding:0px;overflow:hidden">
+  <div id="logo_mobile" class="flex-box set-position-logo">
+    <a id="logo_transform" href="" class="logo">
+      <img src="dist/assets/construct-black.png" alt="construct" />
+    </a>
+  </div>
+  <!-- <a id="logo_transform" href="" class="logo">
+    <img src="dist/assets/construct-black.png" alt="construct" />
+  </a> -->
+  <!-- <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: "230791374314580",
+        autoLogAppEvents: true,
+        xfbml: true,
+        version: "v2.10"
+      });
+      FB.AppEvents.logPageView();
+    };
+
+    (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {
+        return;
+      }
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    })(document, "script", "facebook-jssdk");
+
+
+  </script> -->
+  <iframe id="iframe_page" src="./home.html" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px"
+    height="100%" width="100%">
+  </iframe>
+  <div class="scroll-down w100 centered">
+    <a class="scroll-btn animate bounce">
+      <span class="fa fa-long-arrow-down"></span>
+    </a>
+  </div>
+  <div id="progress_q" class="progress-q animate fadeIn3s" style="display: none">
+    <div class="progress">
+      <div id="q1_progre" class="one success-color"></div>
+      <div id="q2_progre" class="two"></div>
+      <div id="q3_progre" class="three"></div>
+      <div id="q4_progre" class="four"></div>
+      <div id="q5_progre" class="five"></div>
+      <div id="q6_progre" class="six"></div>
+      <div id="progress_bar_line" class="progress-bar progress-bar-success" style="width: 6%">
+      </div>
+      <div id="progress_bar_line_head" class="contain-head-progress" style="width: 8%">
+        <span class="head-progress">
+          <img src="dist/assets/head-progress.svg" alt="construct" />
+          <div id="tooltip_talk" class="tooltip-talk">
+            <div id="content_tooltip" class="triangle-right left">I'll be your guide for this quiz!</div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+  <script src="dist/vendors/jquery-3.3.1.min.js"></script>
+  <script src="https://connect.facebook.net/en_US/sdk.js"></script>
+  <script>
+    if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+      $("#tooltip_talk").addClass("safari");
+    }
+
+
+  </script>
+</body>
+
+</html>

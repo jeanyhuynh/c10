@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
+  <link rel="stylesheet" href="../dist/styles/main.css">
+  <title>Animation</title>
+</head>
+
+<body data-title="mobile-responsive" data-type="q3" class="blue-bg">
+  <div class="container-fluid centered middle Q3">
+    <label id="result_test_4_5" class="label-text mbt-0 load-index animate fadeIn">
+      You know a website analysis isn't just for desktop, right? Don't get mad, but we've also been analysing your mobile site.
+    </label>
+    <div class="body-content centered middle load-index">
+      <div class="img-left-box animate fadeIn2s">
+        <div id="image_mobile" class="screen-mobile result-mob">
+          <img class="mob-inside-medi" src="../dist/assets/screen-mobile41.png" />
+        </div>
+
+      </div>
+      <label class="small-text load-index animate fadeIn15s">
+        Only two more questions until we find out for sure how much you actually hate your website.
+      </label>
+    </div>
+    <div class="flex-box w100 centered load-index">
+      <a href="../q4/5.0.html" class="btn btn-primary btn-medium yellow-bg color--white animate fadeIn3s">
+        <span>Time to assess your website's ease of use.</span>
+        <span class="fa fa-long-arrow-right"></span>
+      </a>
+    </div>
+  </div>
+  </div>
+  <script src="../dist/vendors/jquery-3.3.1.min.js"></script>
+  <script src="../dist/vendors/TweenMax.js"></script>
+  <script src="../dist/scripts/main.js"></script>
+  <script>
+    let percent_line = 56,
+      percent_line_head = percent_line,
+      text = "Whew";
+    $("#progress_q", window.parent.document).show();
+    $("#progress_bar_line", window.parent.document).css("width", percent_line + "%");
+    $("#progress_bar_line_head", window.parent.document).css("width", percent_line_head + "%");
+    $("#content_tooltip", window.parent.document).html(text);
+    var windowWidth =
+      window.screen.width < window.outerWidth
+        ? window.screen.width
+        : window.outerWidth;
+    if (windowWidth < 768) {
+      $("#content_tooltip", window.parent.document).removeClass("left");
+      $("#content_tooltip", window.parent.document).addClass("right");
+    }
+    $("#q4_progre", window.parent.document).removeClass("success-color");
+  </script>
+</body>
+
+</html>

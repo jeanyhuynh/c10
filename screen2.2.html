@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/styles/main.css">
+    <title>Animation</title>
+</head>
+
+<div id="loading" class="hide loading-icon centered middle">
+    <div class="jump">
+        <img class="jump" src="dist/assets/gif/rabbit_jumping happy.svg" />
+    </div>
+    <span>Loading</span>
+</div>
+
+<body data-title="" class="bg-yellow">
+    <div class="container-fluid centered race-screen">
+        <div class="main-head centered main-head-height">
+            <div class="label-text pos-inher load-index">
+                <label class="animate fadeIn src-2 ">
+                    Let’s check your feelings against the facts.
+                </label>
+            </div>
+
+            <div id="scr21-btn-find" class="box-search load-index centered">
+                <div id="form-check-url" class="flex-colum position-relative flex-box w100 mbt3">
+                    <input id="url_email" type="text" placeholder="Enter your email" value="" class="animate fadeIn" />
+                    <input id="url_site" type="text" placeholder="Enter your website" value="" class="animate fadeIn" />
+                </div>
+
+                <a id="btn-submit-url" class="btn btn-primary green-bg color--white animate fadeIn3s">
+                    <span>Let's go check out these findings</span>
+                    <span class="fa fa-long-arrow-right"></span>
+                </a>
+            </div>
+            <div class="take-note set-index2 animate fadeIn3s">
+                We take your personal data seriously. We will not use your email and any other associated data for anything not pertaining
+                to this campaign.
+            </div>
+        </div>
+        <div class="main-foot">
+            <div class="the-sun">
+                <img src="dist/assets/the-sun.png" class="" />
+            </div>
+            <div class="the-road no-animation road-bg">
+            </div>
+            <div class="animals-collect">
+                <div class="position-relative left-side">
+                    <div class="shadow-animal shadow-turtle">
+                        <img src="dist/assets/turtle-shadow.png" />
+                    </div>
+                    <div class="turtle racer">
+                        <img src="dist/assets/gif/turtle_normal.svg" />
+                    </div>
+                </div>
+                <div class="position-relative right-side">
+                    <div class="shadow-animal shadow-rabbit">
+                        <img src="dist/assets/rabbit-shadow.png" />
+                    </div>
+                    <div class="rabbit racer">
+                        <img src="dist/assets/gif/rabbit_closedeyes.svg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dist/vendors/jquery-3.3.1.min.js"></script>
+    <script src="dist/vendors/TweenMax.js"></script>
+    <script src="dist/scripts/main.js"></script>
+    <script>
+        let percent_line = Math.round(4.25 * 3),
+            percent_line_head = percent_line,
+            text = "Type your site above.";
+        $("#progress_q", window.parent.document).show();
+        $("#progress_bar_line", window.parent.document).css("width", percent_line + "%");
+        $("#progress_bar_line_head", window.parent.document).css("width", percent_line_head + "%");
+        $("#content_tooltip", window.parent.document).html(text);
+    </script>
+</body>
+
+</html>

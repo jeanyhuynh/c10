@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="189px" height="192px" viewBox="0 0 189 192" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-/-3.1.Internal_C10_Q2" transform="translate(-626.000000, -301.000000)">
+            <g id="content" transform="translate(250.000000, 150.000000)">
+                <g id="Group" transform="translate(364.000000, 151.000000)">
+                    <g id="locker">
+                        <g id="Group-2" transform="translate(12.000000, 0.000000)">
+                            <polygon id="Fill-1" fill="#DAD9E0" points="160.494063 129.662191 180.978438 129.662191 180.978438 109.111265 160.494063 109.111265"></polygon>
+                            <polygon id="Fill-2" fill="#FFFFFF" points="153.648125 132.938426 187.824375 132.938426 187.824375 124.003241 153.648125 124.003241"></polygon>
+                            <path d="M188.278125,94.4389506 L188.278125,115.788086 L154.7075,115.788086 L154.7075,94.4389506 C154.7075,60.8783951 127.596875,33.6677778 94.145,33.6677778 C60.68125,33.6677778 33.570625,60.8783951 33.570625,94.4389506 L33.570625,191.344012 L0,191.344012 L0,94.4389506 C0,90.5432099 0.2375,86.707037 0.700625,82.9423457 C6.34125,36.2053704 46.0275,0 94.145,0 C143.936875,0 184.691875,38.7787037 188.053688,87.8745679 C188.206875,90.0428395 188.278125,92.2349383 188.278125,94.4389506" id="Fill-3" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

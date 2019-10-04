@@ -1,0 +1,21 @@
+<svg version="1.1" id="HkCbTLCDgm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 111 111" style="enable-background:new 0 0 111 111;" xml:space="preserve"><style>@-webkit-keyframes HJ9GpIAwem_BklgvCDgm_Animation{0%{-webkit-transform: scale(1, 1);transform: scale(1, 1);}50%{-webkit-transform: scale(1.2, 1.2);transform: scale(1.2, 1.2);}100%{-webkit-transform: scale(1, 1);transform: scale(1, 1);}}@keyframes HJ9GpIAwem_BklgvCDgm_Animation{0%{-webkit-transform: scale(1, 1);transform: scale(1, 1);}50%{-webkit-transform: scale(1.2, 1.2);transform: scale(1.2, 1.2);}100%{-webkit-transform: scale(1, 1);transform: scale(1, 1);}}@-webkit-keyframes H1rfpUCwxX_Animation{0%{opacity: 1;}10%{opacity: 0;}20%{opacity: 1;}100%{opacity: 1;}}@keyframes H1rfpUCwxX_Animation{0%{opacity: 1;}10%{opacity: 0;}20%{opacity: 1;}100%{opacity: 1;}}@-webkit-keyframes HkGfaURDem_Animation{0%{opacity: 0;}10%{opacity: 1;}20%{opacity: 0;}100%{opacity: 0;}}@keyframes HkGfaURDem_Animation{0%{opacity: 0;}10%{opacity: 1;}20%{opacity: 0;}100%{opacity: 0;}}#HkCbTLCDgm *{-webkit-animation-duration: 1s;animation-duration: 1s;-webkit-animation-iteration-count: infinite;animation-iteration-count: infinite;-webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);animation-timing-function: cubic-bezier(0, 0, 1, 1);}#BJMpIAPeX{fill: #FCC62F;}#HJXMpLCvgX{fill: none;stroke: #231F20;stroke-width: 3;stroke-linecap: round;stroke-miterlimit: 10;}#rJ4fpUCDxQ{fill: none;stroke: #231F20;stroke-width: 3;stroke-linecap: round;stroke-miterlimit: 10;}#H1LMpUAwg7{fill: #FFFFFF;}#rJvGpU0Px7{fill: #231F20;}#BJOzTU0vxQ{fill: #FFFFFF;}#ByFzpLRPx7{fill: #231F20;}#HJ9GpIAwem{fill: #231F20;}#HkGfaURDem{-webkit-animation-name: HkGfaURDem_Animation;animation-name: HkGfaURDem_Animation;-webkit-transform-origin: 50% 0%;transform-origin: 50% 0%;transform-box: fill-box;opacity: 0;}#H1rfpUCwxX{-webkit-animation-name: H1rfpUCwxX_Animation;animation-name: H1rfpUCwxX_Animation;-webkit-transform-origin: 50% 50%;transform-origin: 50% 50%;transform-box: fill-box;opacity: 1;}#HJ9GpIAwem_BklgvCDgm{-webkit-animation-name: HJ9GpIAwem_BklgvCDgm_Animation;animation-name: HJ9GpIAwem_BklgvCDgm_Animation;-webkit-transform-origin: 50% 50%;transform-origin: 50% 50%;transform-box: fill-box;}</style>
+
+<title>emoji / sad emoji</title>
+<desc>Created with Sketch.</desc>
+<circle cx="55.7" cy="55.7" r="55.7" id="BJMpIAPeX"/>
+<g id="HyxzpLRveQ">
+	<g id="HyWzpICPeQ">
+	</g>
+	<g id="HkGfaURDem">
+		<line x1="23.2" y1="48.6" x2="35.6" y2="48.6" id="HJXMpLCvgX"/>
+		<line x1="75.7" y1="48.6" x2="88.1" y2="48.6" id="rJ4fpUCDxQ"/>
+	</g>
+	<g id="H1rfpUCwxX">
+		<path id="H1LMpUAwg7" d="M36.9,48.6c0,4.1-3.3,7.5-7.5,7.5c-4.1,0-7.5-3.3-7.5-7.5s3.3-7.5,7.5-7.5&#10;&#9;&#9;&#9;C33.5,41.1,36.9,44.4,36.9,48.6"/>
+		<path id="rJvGpU0Px7" d="M34.4,48.6c0,2.8-2.3,5-5,5c-2.8,0-5-2.3-5-5c0-2.8,2.3-5,5-5C32.2,43.5,34.4,45.8,34.4,48.6"/>
+		<path id="BJOzTU0vxQ" d="M89.4,48.6c0,4.1-3.3,7.5-7.5,7.5c-4.1,0-7.5-3.3-7.5-7.5s3.3-7.5,7.5-7.5&#10;&#9;&#9;&#9;C86.1,41.1,89.4,44.4,89.4,48.6"/>
+		<path id="ByFzpLRPx7" d="M87,48.6c0,2.8-2.3,5-5,5c-2.8,0-5-2.3-5-5c0-2.8,2.3-5,5-5C84.7,43.5,87,45.8,87,48.6"/>
+	</g>
+	<g id="HJ9GpIAwem_BklgvCDgm" data-animator-group="true" data-animator-type="2"><path id="HJ9GpIAwem" d="M77,73c-0.7,0.7-1.8,0.6-2.7-0.1c-10.8-9.1-26.6-9.1-37.4,0c-0.8,0.7-2,0.8-2.7,0.1&#10;&#9;&#9;c-0.7-0.7-0.5-1.9,0.4-2.7C46.8,60,64.5,60,76.6,70.2C77.5,71,77.7,72.3,77,73"/></g>
+</g>
+<script>(function(){var a=document.querySelector('#HkCbTLCDgm'),b=a.querySelectorAll('style'),c=function(d){b.forEach(function(f){var g=f.textContent;g&amp;&amp;(f.textContent=g.replace(/transform-box:[^;\r\n]*/gi,'transform-box: '+d))})};c('initial'),window.requestAnimationFrame(function(){return c('fill-box')})})();</script></svg>

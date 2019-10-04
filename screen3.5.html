@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/styles/main.css">
+    <title>Animation</title>
+</head>
+
+<body data-title="ssl-screen" class="bg-green" data-js="q2">
+    <div class="container-fluid centered middle ssl-screen">
+        <div class="centered">
+            <div class="label-text load-index">
+                <label class="animate fadeIn white-text">
+                    Do you have an SSL Certificate
+                    <br> installed?
+                </label>
+            </div>
+            <div class="ssl-img animate fadeIn load-index">
+                <img src="dist/assets/gif/webSSL.svg" />
+            </div>
+            <div class="wrapper progress-bar-ssl load-index">
+                <ul class="steps">
+                    <li class="active">
+                        <a href="#">
+                            <span class="fa fa-question"></span>
+                        </a>
+                        <input type="hidden" name="answer_scr_3_5" value="5">
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa fa-star"></span>
+                        </a>
+                        <input type="hidden" name="answer_scr_3_5" value="4">
+                    </li>
+                    <li>
+                        <a href="#" class="rate">
+                            <span class="fa fa-star size-15"></span>
+                            <span class="fa fa-star size-15"></span>
+                        </a>
+                        <input type="hidden" name="answer_scr_3_5" value="3">
+                    </li>
+                    <li>
+                        <a href="#" class="group-stars">
+                            <span class="rate-2star">
+                                <span class="fa fa-star size-15"></span>
+                                <span class="fa fa-star size-15"></span>
+                                <span class="fa fa-star size-15"></span>
+                            </span>
+                        </a>
+                        <input type="hidden" name="answer_scr_3_5" value="2">
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa fa-trophy"></span>
+                        </a>
+                        <input type="hidden" name="answer_scr_3_5" value="1">
+                    </li>
+                </ul>
+            </div>
+            <div class="take-note-slider load-index">
+                <span id="point-0" class="load-status animate fadeIn">I don't know what SSL is.</span>
+                <span id="point-1" class="load-status animate fadeIn hide">What SSL certificate? My website doesn't have it.</span>
+                <span id="point-2" class="load-status animate fadeIn hide">I had one, but it expired. Eep!</span>
+                <span id="point-3" class="load-status animate fadeIn hide">Yes, but I need to update it. Heh.</span>
+                <span id="point-4" class="load-status animate fadeIn hide">Yes! I just recently updated it actually!</span>
+            </div>
+            <div class="flex-box mt5 load-index w100 centered">
+                <a href="screen3.6.html" id="btn_3_5_submit" class="btn mt-5 btn-short btn-primary blue-bg color--white animate fadeIn3s">
+                    <span>next</span>
+                    <span class="fa fa-long-arrow-right"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="dist/vendors/jquery-3.3.1.min.js"></script>
+    <script src="dist/vendors/TweenMax.js"></script>
+    <script src="dist/vendors/sliderPie.js"></script>
+    <script src="dist/scripts/main.js"></script>
+    <script>
+        let percent_line = 31,
+            percent_line_head = percent_line,
+            text = "Select the meter to see options.";
+        $("#progress_q", window.parent.document).show();
+        $("#progress_bar_line", window.parent.document).css("width", percent_line + "%");
+        $("#progress_bar_line_head", window.parent.document).css("width", percent_line_head + "%");
+        $("#content_tooltip", window.parent.document).html(text);
+    </script>
+</body>
+
+</html>

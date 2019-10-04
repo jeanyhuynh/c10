@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="1024px" viewBox="0 0 1440 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>BG</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="100%" gradientTransform="translate(0.500000,0.500000),scale(0.710618,1.000000),rotate(90.000000),translate(-0.500000,-0.500000)" id="radialGradient-1">
+            <stop stop-color="#FCEFCE" offset="0%"></stop>
+            <stop stop-color="#C9DAD2" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-/-1.0.Internal_C10_NewHomepage" fill="url(#radialGradient-1)" stroke="#979797">
+            <rect id="BG" x="0.5" y="0.5" width="1440" height="1023"></rect>
+        </g>
+    </g>
+</svg>

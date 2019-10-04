@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/styles/main.css">
+    <title>Animation</title>
+</head>
+
+<body class="bg-yellow" data-title="race">
+    <div class="container-fluid centered race-screen">
+        <div class="main-head main-head-height centered">
+            <div class="label-text load-index">
+                <label class="animate fadeIn src-2">
+                    Is your site a
+                    <span class="green-text"> turtle </span> in a field of
+                    <span class="red-text"> rabbits </span> competing for web-attention?
+                </label>
+            </div>
+            <a id="screen_20" href="screen2.1.html" class="load-index btn btn-primary btn-short green-bg color--white animate fadeIn3s">
+                <span>Let’s look into that</span>
+                <span class="fa fa-long-arrow-right"></span>
+            </a>
+        </div>
+        <div class="main-foot non-absolute load-index">
+            <div class="the-sun animate opacity0">
+                <img src="dist/assets/the-sun.png" class="" />
+            </div>
+            <div class="the-road animate road-bg">
+            </div>
+            <div class="animals-collect">
+                <div class="position-relative left-side centered">
+                    <div class="shadow-animal shadow-turtle opacity0">
+                        <img src="dist/assets/turtle-shadow.png" />
+                    </div>
+                    <div class="turtle racer opacity0">
+                        <img src="dist/assets/gif/turtle_normal.svg" />
+                    </div>
+                </div>
+                <div class="position-relative right-side centered">
+                    <div class="shadow-animal shadow-rabbit opacity0">
+                        <img src="dist/assets/rabbit-shadow.png" />
+                    </div>
+                    <div class="rabbit racer opacity0">
+                        <img src="dist/assets/gif/rabbit_closedeyes.svg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dist/vendors/jquery-3.3.1.min.js"></script>
+    <script src="dist/vendors/TweenMax.js"></script>
+    <script src="dist/scripts/main.js"></script>
+    <script>
+        let percent_line = 4,
+            percent_line_head = percent_line,
+            text = "I'll be your guide for this quiz!";
+        $("#progress_q", window.parent.document).show();
+        $("#progress_bar_line", window.parent.document).css("width", percent_line + "%");
+        $("#progress_bar_line_head", window.parent.document).css("width", percent_line_head + "%");
+        $("#content_tooltip", window.parent.document).html(text);
+    </script>
+</body>
+
+</html>
